@@ -1,0 +1,5029 @@
+/* ************************Page List************************
+0.  (Typography, Common CSS<,Extra)
+1.  Home Page
+2.  Course Details Page
+3.  Book Details Page
+4.  Event Details Page
+5.  Purchased Course Page
+6.  Blog Page
+7.  Single Blog Page
+8.  Cart page
+9.  Purchase History Page
+10. Authentication Page
+11. Profile Page
+12. Dashboard Course and Wishlist Page
+13. Dashboard Page
+14. View All Course Page
+15. View All Book Page
+***********************************************************/
+
+
+/*========================================== 
+                Typography 
+==========================================*/
+
+@font-face {
+    font-family: roboto-100;
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: roboto-300;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: roboto-400;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto-500;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: roboto-700;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: roboto-900;
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
+
+
+/*=========================================
+                Common CSS
+=========================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*========================================= 
+                Extra 
+=========================================*/
+
+.hidden {
+    display: none;
+}
+
+.section-padding {
+    padding: 50px 0 70px;
+}
+
+
+/* =================Title================= */
+
+.page-title {
+    background-color: #3C424C;
+    padding: 30px 0;
+}
+
+.page-title .title {
+    margin: 20px 0;
+}
+
+.page-title .breadcrumb {
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+.page-title .breadcrumb .breadcrumb-item a {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.page-title .title p {
+    font-family: roboto-700;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Home Page
+=======================================================================================================================================*/
+
+
+/* =================Header Top================= */
+
+#header-top {
+    position: relative;
+    box-sizing: border-box;
+    padding: 10px 0;
+    background-color: #F1FF29;
+    display: flex;
+    align-items: center;
+}
+
+#header-top .close-top {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#header-top .fas {
+    font-size: 18px;
+}
+
+#header-top .content {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#header-top .content p {
+    font-family: roboto-400;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+#header-top .content img {
+    height: 35px;
+}
+
+
+/* =================Navbar================= */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 999999999999;
+}
+
+#header-navbar .navbar-icon {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-navbar .menu-icon>i {
+    color: #26bbb9;
+    font-size: 28px;
+    padding-left: 100px;
+}
+
+#header-navbar img.logoimg {
+    width: 100%;
+    height: auto;
+}
+
+#header-navbar .mainheader {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+
+#header-navbar #main_navbar .signin {
+    width: 153px;
+    height: 40px;
+    font-family: roboto-400;
+    font-size: 16px;
+    /* padding: 5px; */
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333;
+    /* margin-right: 5%; */
+    border-radius: 10px;
+}
+
+#header-navbar #main_navbar .signup {
+    width: 153px;
+    height: 40px;
+    /* padding: 5px; */
+    font-family: roboto-400;
+    font-size: 16px;
+    background-color: #333;
+    border: 1px solid #fff;
+    color: #fff;
+    /* margin-left: 5%; */
+    border-radius: 10px;
+}
+
+@media (max-width: 768.98px) {
+    #header-navbar .mainheader {
+        padding: 0px;
+    }
+    #header-navbar #main_navbar img.logoimg {
+        /* display: block; */
+        width: 70%;
+    }
+    #header-navbar #main_navbar .navbar-search {
+        width: 100%;
+    }
+    #header-navbar #main_navbar .signin {
+        width: 100%;
+    }
+    #header-navbar #main_navbar .signup {
+        width: 100%;
+    }
+}
+
+#header-navbar .navbar-search {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    /* margin: 0 15px; */
+}
+
+#header-navbar .navbar-search form {
+    width: 100%;
+}
+
+#header-navbar .navbar-search input {
+    padding-left: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#header-navbar .navbar-search input::placeholder {
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+#header-navbar .navbar-search_input {
+    position: relative;
+}
+
+#header-navbar .navbar-search_input i {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 40px;
+    height: 38px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #B4B4B4;
+    border: 1px solid #B4B4B4;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+#header-navbar #main_navbar #catname {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #7B8591;
+}
+
+
+/* cart dropdown start */
+
+
+/* common */
+
+@media (min-width: 576px) {
+    #header-navbar div.dropdown a img {
+        width: 45px;
+    }
+    #header-navbar div.dropdown a span {
+        font-size: 20px;
+    }
+    #header-navbar div.dropdown a span i {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #header-navbar div.dropdown a img {
+        width: 15px;
+    }
+    #header-navbar div.dropdown a span {
+        font-size: 15px;
+    }
+    #header-navbar div.dropdown a span i {
+        font-size: 20px;
+    }
+}
+
+#header-navbar .caret-off::before {
+    display: none;
+}
+
+#header-navbar .caret-off::after {
+    display: none;
+}
+
+#header-navbar .fa-stack {
+    color: rgb(190, 185, 185);
+}
+
+#header-navbar .fa-stack:hover {
+    color: rgb(235, 63, 63);
+}
+
+#header-navbar .fa-stack[data-count]:after {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    content: attr(data-count);
+    font-size: 40%;
+    padding: 0.6em;
+    border-radius: 999px;
+    line-height: 0.75em;
+    color: white;
+    text-align: center;
+    min-width: 2em;
+    font-weight: bold;
+    background: #ED7E31;
+    border-style: transparent;
+}
+
+#header-navbar .fa-circle {
+    color: #707070;
+}
+
+#header-navbar .fa-circle:hover {
+    color: rgb(235, 63, 63);
+}
+
+
+/* cart dropdown end */
+
+
+/* common btn */
+
+#header-navbar .common-red a.btn {
+    font-family: roboto-500;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background-color: #E13F00;
+}
+
+#header-navbar .common-white a.btn {
+    font-family: roboto-500;
+    font-size: 10px;
+    color: #E13F00;
+    text-transform: capitalize;
+    background-color: #FFFFFF;
+    border: 1px solid #E13F00;
+}
+
+
+/* common nav dropdown */
+
+
+/* Categories */
+
+#header-navbar #categories span {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #7B8591;
+}
+
+
+/* mycourse start*/
+
+#header-navbar #mycourse a span {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #7B8591;
+}
+
+#header-navbar #mycourse .dropdown-menu {
+    width: 300px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    font-family: roboto-400;
+}
+
+#header-navbar #mycourse .dropdown-menu .all-items .dropdown-item,
+#header-navbar .dropdown-divider {
+    padding: 0px;
+    margin: 0px;
+}
+
+#header-navbar #mycourse .dropdown-menu .all-items,
+#header-navbar .action {
+    padding: 15px;
+}
+
+#header-navbar #mycourse .dropdown-menu .all-items img {
+    width: 65px;
+    height: 65px;
+    border-radius: 5px;
+}
+
+#header-navbar #mycourse .right-details {
+    padding-left: 10px;
+}
+
+#header-navbar #mycourse .right-details .name {
+    font-size: 14px;
+    color: #656A75;
+}
+
+#header-navbar #mycourse .right-details .progress {
+    height: 8px;
+}
+
+#header-navbar #mycourse .right-details .completion {
+    font-size: 10px;
+    color: #15A5DC;
+}
+
+
+/* mycourse end */
+
+
+/* wishlist start*/
+
+#header-navbar #wishlist .dropdown-menu {
+    width: 250px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    font-family: roboto-400;
+}
+
+#header-navbar #wishlist .dropdown-menu .all-items .dropdown-item,
+#header-navbar .dropdown-divider {
+    padding: 0px;
+    margin: 0px;
+}
+
+#header-navbar #wishlist .dropdown-menu .all-items,
+#header-navbar .action {
+    padding: 15px;
+}
+
+#header-navbar #wishlist .dropdown-menu .all-items img {
+    width: 65px;
+    height: 65px;
+    border-radius: 5px;
+}
+
+#header-navbar #wishlist .right-details {
+    padding-left: 10px;
+}
+
+#header-navbar #wishlist .right-details .name {
+    font-size: 14px;
+    color: #656A75;
+}
+
+#header-navbar #wishlist .right-details .status {
+    font-size: 10px;
+    color: #656A75;
+}
+
+#header-navbar #wishlist .right-details .value {
+    font-size: 14px;
+    color: #000000;
+}
+
+
+/* wishlist end */
+
+
+/* notification start*/
+
+#header-navbar #notification .dropdown-menu {
+    width: 220px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    font-family: roboto-400;
+}
+
+#header-navbar #notification .dropdown-menu .all-items .dropdown-item,
+#header-navbar .dropdown-divider {
+    padding: 0px;
+    margin: 0px;
+}
+
+#header-navbar #notification .dropdown-menu .all-items,
+#header-navbar .action {
+    padding: 15px;
+}
+
+#header-navbar #notification .dropdown-menu .all-items img {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+}
+
+#header-navbar #notification .right-details {
+    padding-left: 10px;
+}
+
+#header-navbar #notification .right-details .name {
+    font-size: 14px;
+    color: #363636;
+}
+
+#header-navbar #notification .right-details .time {
+    font-size: 12px;
+    color: #0183FF;
+}
+
+
+/* Notification end */
+
+
+/* shopping-cart start*/
+
+#header-navbar .dropdown-menu {
+    width: 250px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    font-family: roboto-400;
+}
+
+#header-navbar .dropdown-menu .all-items .dropdown-item,
+#header-navbar .dropdown-divider {
+    padding: 0px;
+    margin: 0px;
+}
+
+#header-navbar .dropdown-menu .all-items,
+#header-navbar .action {
+    padding: 15px;
+}
+
+#header-navbar .dropdown-menu .all-items img {
+    width: 65px;
+    height: 65px;
+    border-radius: 5px;
+}
+
+#header-navbar .right-details {
+    padding-left: 10px;
+}
+
+#header-navbar .right-details .name {
+    font-size: 14px;
+    color: #656A75;
+}
+
+#header-navbar #shopping-cart .right-details .status {
+    font-size: 10px;
+    color: #656A75;
+}
+
+#header-navbar #shopping-cart .right-details .value {
+    font-size: 14px;
+    color: #000000;
+}
+
+
+/* shopping-cart end */
+
+
+/* profile start */
+
+#header-navbar #profile .dropdown-menu {
+    width: 200px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+    font-family: roboto-400;
+}
+
+#header-navbar #profile .dropdown-menu a .text-muted {
+    font-size: 10px;
+}
+
+
+/* profile end */
+
+
+/* =================MenuBar================= */
+
+#menubar {
+    background-color: #000000;
+}
+
+#menubar .menu-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menubar .menu-item .menu-link {
+    font-family: roboto-400;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+/* =================Banner================= */
+
+#banner {
+    overflow: hidden;
+}
+
+
+/* =================Quick Preview Slider================= */
+
+.quick-preview .quick-preview-header {
+    padding: 20px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quick-preview .quick-preview-header p {
+    font-family: roboto-500;
+    font-size: 25px;
+    color: #087DAA;
+}
+
+.quick-preview .quick-preview-header .btn {
+    font-family: roboto-400;
+    font-size: 20px;
+    color: #087DAA;
+    border: 1px solid #087DAA;
+}
+
+.quick-preview .quick-preview-header .btn:hover {
+    background-color: #087DAA;
+    color: #FFFFFF;
+}
+
+.quick-preview .quick-preview-slider {
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+}
+
+.quick-preview .quick-preview-slider .preview-item {
+    max-width: 270px;
+    margin: 20px 10px !important;
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+.quick-preview .quick-preview-slider .preview-item .preview-image {
+    height: 150px;
+    overflow: hidden;
+}
+
+.quick-preview .quick-preview-slider .preview-item .preview-content {
+    padding: 20px 10px 10px;
+}
+
+.quick-preview .quick-preview-slider .preview-item .preview-content .title {
+    font-family: roboto-500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left !important;
+}
+
+.quick-preview .quick-preview-slider .preview-item .preview-content .sub-title {
+    font-family: roboto-400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left !important;
+}
+
+.quick-preview .quick-preview-slider .preview-item .preview-content .review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quick-preview .quick-preview-slider .preview-item .preview-content .review .star {
+    margin-right: 10px;
+}
+
+.quick-preview .quick-preview-slider .preview-item .preview-content .review .star .fas {
+    font-size: 18px;
+    color: #FFC107;
+}
+
+.quick-preview .quick-preview-slider .preview-item .preview-content .review .summary {
+    font-family: roboto-400;
+    font-size: 16px;
+}
+
+.quick-preview .quick-preview-slider .preview-item .preview-content .preview-btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quick-preview .quick-preview-slider .preview-item .preview-content .preview-btn a.btn {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background-color: #E13F00;
+}
+
+.quick-preview .quick-preview-slider .preview-item .preview-content .preview-btn button {
+    border: 1px solid #087DAA;
+    border-radius: 50%;
+}
+
+.quick-preview .quick-preview-slider .preview-item .preview-content .preview-btn button.btn {
+    font-size: 18px;
+    color: #087DAA;
+}
+
+.quick-preview .quick-preview-slider button.owl-prev,
+.quick-preview .quick-preview-slider button.owl-next {
+    position: absolute;
+    top: 35%;
+    left: -1%;
+    height: 35px;
+    width: 35px;
+    background-color: #FFFFFF !important;
+    border: 1px solid #707070 !important;
+    border-radius: 5px;
+}
+
+.quick-preview .quick-preview-slider button.owl-next {
+    left: 98%;
+}
+
+.quick-preview .quick-preview-slider button.owl-prev .fas,
+.quick-preview .quick-preview-slider button.owl-next .fas {
+    font-size: 18px;
+    color: #087DAA;
+    line-height: 35px;
+}
+
+
+/* =================Events & Webinars Slider================= */
+
+#event-webinars .image {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#event-webinars .image p {
+    font-family: roboto-500;
+    font-size: 30px;
+    color: #131313;
+    margin-top: 20px;
+}
+
+#event-webinars .event-webinars-slider {
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+}
+
+#event-webinars .event-webinars-slider .slider-item {
+    max-width: 270px;
+    margin: 20px 10px !important;
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+#event-webinars .event-webinars-slider .slider-item .slider-image {
+    height: 150px;
+    overflow: hidden;
+}
+
+#event-webinars .event-webinars-slider .slider-item .slider-content {
+    padding: 20px 10px 10px;
+}
+
+#event-webinars .event-webinars-slider .slider-item .slider-content .title {
+    font-family: roboto-500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#event-webinars .event-webinars-slider .slider-item .slider-content .sub-title {
+    font-family: roboto-400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#event-webinars .event-webinars-slider .slider-item .slider-content .review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#event-webinars .event-webinars-slider .slider-item .slider-content .review .star {
+    margin-right: 10px;
+}
+
+#event-webinars .event-webinars-slider .slider-item .slider-content .review .star .fas {
+    font-size: 18px;
+    color: #FFC107;
+}
+
+#event-webinars .event-webinars-slider .slider-item .slider-content .review .summary {
+    font-family: roboto-400;
+    font-size: 16px;
+}
+
+#event-webinars .event-webinars-slider .slider-item .slider-content .slider-btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#event-webinars .event-webinars-slider .slider-item .slider-content .slider-btn a.btn {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background-color: #E13F00;
+    width: 70%;
+}
+
+#event-webinars .event-webinars-slider .slider-item .slider-content .slider-btn button {
+    border: 1px solid #087DAA;
+    border-radius: 50%;
+}
+
+#event-webinars .event-webinars-slider .slider-item .slider-content .slider-btn button.btn {
+    font-size: 18px;
+    color: #087DAA;
+}
+
+#event-webinars .event-webinars-slider button.owl-prev,
+#event-webinars .event-webinars-slider button.owl-next {
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    height: 35px;
+    width: 35px;
+    background-color: #FFFFFF !important;
+    border: 1px solid #707070 !important;
+    border-radius: 5px;
+}
+
+#event-webinars .event-webinars-slider button.owl-next {
+    left: 94%;
+}
+
+#event-webinars .event-webinars-slider button.owl-prev .fas,
+#event-webinars .event-webinars-slider button.owl-next .fas {
+    font-size: 18px;
+    color: #087DAA;
+    line-height: 35px;
+}
+
+
+/* =================Book Slider================= */
+
+#books .quick-preview-header {
+    padding: 20px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#books .quick-preview-header p {
+    font-family: roboto-500;
+    font-size: 25px;
+    color: #087DAA;
+}
+
+#books .quick-preview-header .btn {
+    font-family: roboto-400;
+    font-size: 20px;
+    color: #087DAA;
+    border: 1px solid #087DAA;
+}
+
+#books .quick-preview-header .btn:hover {
+    background-color: #087DAA;
+    color: #FFFFFF;
+}
+
+#books .books-slider {
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+}
+
+#books .books-slider .slider-item {
+    max-width: 270px;
+    margin: 20px 10px !important;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #B2B2B2;
+}
+
+#books .books-slider .slider-item .slider-image {
+    height: 200px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+#books .owl-carousel .owl-item img {
+    width: auto !important;
+    height: 100%;
+}
+
+#books .books-slider .slider-item .slider-content .title {
+    font-family: roboto-500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: left;
+}
+
+#books .books-slider .slider-item .slider-content .sub-title {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #717171;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#books .books-slider .slider-item .slider-content .wish-btn button {
+    height: 35px;
+    width: 35px;
+    background-color: #F4BD01;
+    border-radius: 5px;
+    text-align: center;
+    border: 0;
+}
+
+#books .books-slider .slider-item .slider-content .wish-btn .fas {
+    font-size: 25px;
+    color: #FFFFFF;
+    line-height: 35px;
+}
+
+#books .books-slider .slider-item .slider-content .books-summary {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #B2B2B2;
+}
+
+#books .books-slider .slider-item .slider-content .books-summary .user,
+#books .books-slider .slider-item .slider-content .books-summary .comment,
+#books .books-slider .slider-item .slider-content .books-summary .star {
+    display: flex;
+    align-items: center;
+    color: #B2B2B2;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-right: 1px solid;
+}
+
+#books .books-slider .slider-item .slider-content .books-summary .star {
+    border: 0;
+    color: #FFC107;
+    padding-left: 25px;
+}
+
+#books .books-slider button.owl-prev,
+#books .books-slider button.owl-next {
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    height: 35px;
+    width: 35px;
+    background-color: #FFFFFF !important;
+    border: 1px solid #707070 !important;
+    border-radius: 5px;
+}
+
+#books .books-slider button.owl-next {
+    left: 98%;
+}
+
+#books .books-slider button.owl-prev .fas,
+#books .books-slider button.owl-next .fas {
+    font-size: 18px;
+    color: #087DAA;
+    line-height: 35px;
+}
+
+
+/* =================Survey================= */
+
+#survey {
+    position: relative;
+    padding: 100px 0;
+}
+
+#survey .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 52%;
+    width: 45%;
+}
+
+#survey .text h3 {
+    font-family: roboto-500;
+    font-size: 30px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+#survey .text p {
+    font-family: roboto-400;
+    font-size: 20px;
+    color: #000000;
+    margin: 20px 0;
+}
+
+#survey .text p span {
+    font-family: roboto-500;
+    font-size: 22px;
+}
+
+#survey .text h5 {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+#survey .text .btn {
+    font-family: roboto-700;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background-color: #000000;
+    border-radius: 0;
+}
+
+
+/* =================Course Items================= */
+
+#course-items {
+    background-color: #F3F3F3;
+}
+
+#course-items .image {
+    height: 200px;
+    border: 1px solid #707070;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#course-items .image img {
+    width: 100%;
+}
+
+#course-items .text .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #2C2C2C;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+#course-items .text .creator {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #2C2C2C;
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+
+#course-items .text p {
+    font-family: roboto-400;
+    color: #2C2C2C;
+    font-size: 16px;
+}
+
+#course-items .text p span {
+    color: #142AF3;
+}
+
+#course-items .text p span a {
+    font-family: roboto-500;
+    color: #142AF3;
+    text-decoration: underline !important;
+}
+
+
+/* =================Community Slider================= */
+
+#community .header {
+    text-align: center;
+}
+
+#community .header .title {
+    font-family: roboto-500;
+    font-size: 35px;
+    color: #1F1F1F;
+}
+
+#community .header .sub-title {
+    font-family: roboto-500;
+    font-size: 25px;
+    color: #707070;
+    margin: 15px 0 50px;
+}
+
+#community .community-slider {
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+}
+
+#community .community-slider .slider-item {
+    max-width: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#community .community-slider .slider-item .slider-image {
+    height: 180px;
+    width: 180px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+}
+
+#community .community-slider .slider-item .slider-content .title {
+    position: relative;
+    padding: 20px 0;
+}
+
+#community .community-slider .slider-item .slider-content .title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 100px;
+    background-color: #2A73CC;
+}
+
+#community .community-slider .slider-item .slider-content .title h4 {
+    font-family: roboto-500;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #382D8B;
+}
+
+#community .community-slider .slider-item .slider-content .title p {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #1F1F1F;
+}
+
+#community .community-slider .slider-item .slider-content p {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #1F1F1F;
+    margin-top: 30px;
+}
+
+#community .community-slider button.owl-prev,
+#community .community-slider button.owl-next {
+    position: absolute;
+    top: 65%;
+    left: -10%;
+    font-size: 30px;
+    color: #2A73CC;
+}
+
+#community .community-slider button.owl-next {
+    left: 110%;
+}
+
+
+/* =================Subscribe================= */
+
+#subscribe {
+    background-color: #F2F2F2;
+}
+
+#subscribe .form {
+    padding: 20px 30px;
+    border: 5px solid #F37B41;
+    position: relative;
+    text-align: center;
+    background-image: url(../media/img/Homepage/subscribe.svg);
+    background-repeat: no-repeat;
+    background-position: 8% -150%;
+    width: 100%;
+}
+
+#subscribe .form p {
+    font-family: roboto-500;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+}
+
+#subscribe .form .form-control {
+    border-radius: 30px;
+    margin: 20px 0;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #000000 !important;
+}
+
+#subscribe .form .form-control::placeholder {
+    color: #c5c5c5;
+}
+
+#subscribe .form input::-webkit-outer-spin-button,
+#subscribe .form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#subscribe .form input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#subscribe .form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+}
+
+#subscribe .form select+i.fa {
+    float: right;
+    margin-top: -50px;
+    margin-right: 25px;
+    pointer-events: none;
+    color: #C5C5C5;
+    background-color: #FFFFFF;
+    padding-right: 5px;
+}
+
+#subscribe .form .btn {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image: linear-gradient(to right, #f37335, #f78531, #fa972e, #fba92d, #fbbb30);
+}
+
+
+/* =================Counter================= */
+
+#counter {
+    background-image: url('../media/img/Homepage/counter.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#counter .counter-item {
+    text-align: center;
+}
+
+#counter .counter-item p {
+    font-family: roboto-500;
+    font-size: 30px;
+    color: #000000;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+#counter .counter-item h3 {
+    font-size: 60px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+
+/* =================Footer================= */
+
+#footer {
+    background-color: #3C424C;
+}
+
+#footer p {
+    font-size: 20px;
+    color: #B9B5B5;
+}
+
+#footer ul li {
+    list-style-type: none;
+}
+
+#footer .title {
+    font-family: roboto-700;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+#footer ul li a {
+    font-family: roboto-400;
+    font-size: 20px;
+    color: #B9B5B5;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#footer .contact,
+#footer .company,
+#footer .links,
+#footer .support,
+#footer .recomended {
+    margin-top: 20px;
+}
+
+#footer .contact img {
+    margin-bottom: 20px;
+}
+
+#footer .contact .phone,
+#footer .contact .mail {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#footer .contact .phone .fas,
+#footer .contact .mail .fas {
+    font-size: 20px;
+    color: #B9B5B5;
+    margin-right: 10px;
+}
+
+#footer .contact .social {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#footer .contact .social a {
+    height: 35px;
+    width: 35px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#footer .contact .social a:hover .fab {
+    color: #087DAA;
+}
+
+#footer .contact .social .fab {
+    font-size: 20px;
+    line-height: 35px;
+    color: #868686;
+}
+
+#footer .company {
+    padding-left: 35px;
+}
+
+#footer .footer-bottom {
+    font-family: roboto-400;
+    font-size: 18px;
+    margin-top: 80px;
+}
+
+#footer .footer-bottom .footer-title {
+    color: #B9B5B5;
+    margin-top: 20px;
+}
+
+#footer .footer-bottom .footer-menu {
+    display: flex;
+    margin-top: 20px;
+}
+
+#footer .footer-bottom .footer-menu a {
+    color: #B9B5B5;
+    text-transform: capitalize;
+    padding-right: 10px;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Course Details Page
+=======================================================================================================================================*/
+
+
+/* =================Course Summary================= */
+
+#course-details-overview .course-summary {
+    background-color: #29303B;
+    padding: 30px 0;
+}
+
+#course-details-overview .course-summary .content {
+    position: relative;
+}
+
+
+/* Course Summary Text */
+
+#course-details-overview .course-summary .content .text {
+    width: 70%;
+}
+
+#course-details-overview .course-summary .content .text .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#course-details-overview .course-summary .content .text .breadcrumb .breadcrumb-item a,
+.breadcrumb-item.active {
+    font-family: roboto-700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#course-details-overview .course-summary .content .text .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    content: '>';
+    color: #FFFFFF;
+}
+
+#course-details-overview .course-summary .content .text .course-name p {
+    font-family: roboto-700;
+    font-size: 35px;
+    color: #FFFFFF;
+    margin: 30px 0;
+}
+
+#course-details-overview .course-summary .content .text .short-description p {
+    font-family: roboto-400;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+
+#course-details-overview .course-summary .content .text .user,
+#course-details-overview .course-summary .content .text .teacher {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#course-details-overview .course-summary .content .text .user .rating {
+    font-family: roboto-400;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+#course-details-overview .course-summary .content .text .user .rating .fas {
+    font-size: 14px;
+    color: #F4BD01;
+}
+
+
+/* Course Summary Card */
+
+#course-details-overview .course-summary .content .card {
+    position: fixed;
+    top: 160px;
+    left: 90%;
+    transform: translateX(-90%);
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #C4BBBB;
+    border-radius: 0;
+    z-index: 999;
+}
+
+#course-details-overview .course-summary .content .card .card-image {
+    position: relative;
+    text-align: center;
+}
+
+#course-details-overview .course-summary .content .card .card-image .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#course-details-overview .course-summary .content .card .card-image .overlay .btn {
+    height: 50px;
+    width: 50px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#course-details-overview .course-summary .content .card .card-image .overlay .btn .far {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#course-details-overview .course-summary .content .card .card-body .price {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px;
+}
+
+#course-details-overview .course-summary .content .card .card-body .price .main-price p {
+    font-family: roboto-700;
+    font-size: 22px;
+    color: #0F0F0F;
+}
+
+#course-details-overview .course-summary .content .card .card-body .price .discount-price p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #474646;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    min-width: 30px;
+}
+
+#course-details-overview .course-summary .content .card .card-body .price .discount-price p::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #474646;
+}
+
+#course-details-overview .course-summary .content .card .card-body .enroll-btn .btn {
+    font-family: roboto-700;
+    font-size: 22px;
+    color: #FFFFFF;
+    background-color: #F44A4A;
+    border-radius: 0;
+    display: block;
+}
+
+#course-details-overview .course-summary .content .card .card-body .course-include p {
+    font-family: roboto-700;
+    font-size: 18px;
+    color: #7C7C7A;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+#course-details-overview .course-summary .content .card .card-body .course-include ul {
+    padding-left: 20px;
+}
+
+#course-details-overview .course-summary .content .card .card-body .course-include ul li {
+    font-family: roboto-500;
+    font-size: 16px;
+    color: #7C7C7A;
+}
+
+#course-details-overview .course-summary .content .card .card-body .course-include ul li::marker {
+    font-size: 20px !important;
+}
+
+#course-details-overview .course-summary .content .card .card-body .share-btn .btn {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #0284A2;
+    display: block;
+    margin-top: 30px;
+    border-top: 1px solid #C4BBBB;
+}
+
+
+/* =================What To Learn================= */
+
+#course-details-overview .learn {
+    margin: 30px 0;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: 1px solid #C4BBBB;
+}
+
+#course-details-overview .learn .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #777777;
+    margin: 20px 0;
+}
+
+#course-details-overview .learn .item {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #777777;
+    display: flex;
+    align-items: baseline;
+    margin: 10px 0;
+}
+
+#course-details-overview .learn .item .far {
+    font-size: 20px;
+}
+
+
+/* =================Course Content================= */
+
+
+/*Title */
+
+#course-details-overview .course-content .title {
+    padding: 20px 0;
+}
+
+#course-details-overview .course-content .title h3 {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #707070;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+#course-details-overview .course-content .title .total-item {
+    display: flex;
+}
+
+#course-details-overview .course-content .title .total-item p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #707070;
+    margin-right: 10px;
+}
+
+
+/* Course Content Title */
+
+#course-details-overview .course-content .section-title {
+    cursor: pointer;
+    padding: 10px 18px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #C4BBBB;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#course-details-overview .course-content .section-title .left-part,
+#course-details-overview .course-content .section-title .right-part {
+    display: flex;
+    align-items: center;
+}
+
+#course-details-overview .course-content .section-title .left-part .fas {
+    font-size: 20px;
+    color: #3C3B37;
+    margin-right: 20px;
+}
+
+#course-details-overview .course-content .section-title .left-part .text {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #3C3B37;
+    text-transform: capitalize;
+}
+
+#course-details-overview .course-content .section-title .right-part p {
+    font-family: roboto-500;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #777777;
+}
+
+
+/* Course Content Type */
+
+#course-details-overview .course-content .content {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #C4BBBB;
+    padding: 0 25px 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+#course-details-overview .course-content .content .type {
+    display: flex;
+    align-items: center;
+}
+
+#course-details-overview .course-content .content .type .fas {
+    font-size: 20px;
+    color: #C4BBBB;
+    width: 30px;
+}
+
+#course-details-overview .course-content .content .preview {
+    display: flex;
+    align-items: center;
+}
+
+#course-details-overview .course-content .content .preview .time {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #707070;
+}
+
+#course-details-overview .course-content .content .type a,
+#course-details-overview .course-content .content .preview a {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #0F7C90;
+    margin: 0 10px;
+    text-decoration: underline !important;
+}
+
+#course-details-overview .course-content .content .type p {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #707070;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#course-details-overview .course-content .more-item {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #1B8396;
+    text-transform: capitalize;
+    border: 1px solid #1B8396;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    padding: 12px 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+/* =================Requirement================= */
+
+#course-details-overview .requirement .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #29303B;
+    margin: 20px 0;
+}
+
+#course-details-overview .requirement ul li {
+    font-family: roboto-300;
+    font-size: 14px;
+    color: #29303B;
+    margin-left: 22px;
+}
+
+#course-details-overview .requirement ul li::marker {
+    color: #707070;
+    font-size: 25px;
+}
+
+
+/* =================Description================= */
+
+#course-details-overview .description .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #29303B;
+    margin: 20px 0;
+}
+
+#course-details-overview .description p {
+    font-family: roboto-300;
+    font-size: 18px;
+    color: #29303B;
+}
+
+#course-details-overview .description p a {
+    color: #0284A2;
+    text-transform: capitalize;
+    text-decoration: underline !important;
+}
+
+
+/* =================Instructor================= */
+
+#course-details-overview .instructor {
+    margin: 50px 0;
+}
+
+#course-details-overview .instructor .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #29303B;
+    margin: 20px 0;
+}
+
+#course-details-overview .instructor .image {
+    height: 90px;
+    width: 90px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 0;
+    margin-right: 20px;
+}
+
+#course-details-overview .instructor .name {
+    font-family: roboto-500;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+
+#course-details-overview .instructor .name span {
+    font-family: roboto-300;
+}
+
+#course-details-overview .instructor .about {
+    font-family: roboto-300;
+    font-size: 18px;
+    color: #29303B;
+    margin: 20px 0;
+}
+
+
+/* =================Course Review================= */
+
+#course-details-overview .course-review .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #2C2C2C;
+    margin: 10px 0;
+}
+
+#course-details-overview .course-review .summary .star {
+    display: flex;
+    align-items: center;
+}
+
+#course-details-overview .course-review .summary .star .fas {
+    font-size: 18px;
+    color: #0FBFA1;
+    padding: 0 2px;
+}
+
+#course-details-overview .course-review .summary .star .nocolor {
+    color: #7A7676;
+}
+
+#course-details-overview .course-review .summary .number {
+    font-family: roboto-500;
+    font-size: 18px;
+    color: #2C2C2C;
+    margin-left: 15px;
+}
+
+#course-details-overview .course-review .summary .total {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2C2C2C;
+    margin-top: 5px;
+}
+
+
+/* =================Rating Bar ================= */
+
+#course-details-overview .rating-bar {
+    margin: 25px 0px 50px;
+}
+
+#course-details-overview .rating-bar .rating-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#course-details-overview .rating-bar .rating-item .star {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+#course-details-overview .rating-bar .rating-item .proggressbar {
+    position: relative;
+    overflow: hidden;
+    width: 222px;
+    height: 27px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    margin: 0px 20px;
+}
+
+#course-details-overview .rating-bar .rating-item .proggressbar .proggressbar-percent {
+    position: absolute;
+    height: 100%;
+    background-color: #0FBFA1;
+}
+
+#course-details-overview .rating-bar .rating-item .percent {
+    font-family: roboto-500;
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+
+/* =================Review Message================= */
+
+#course-details-overview .review-message .item {
+    border-top: 1px solid #C4BBBB;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-family: roboto-400;
+    font-size: 14px;
+    color: #2C2C2C;
+}
+
+#course-details-overview .review-message .item .star {
+    color: #0FBFA1;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#course-details-overview .review-message .item .star .name {
+    font-family: roboto-400;
+    font-size: 14px;
+    color: #2C2C2C;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+#course-details-overview .review-message .item .nocolor {
+    color: #757575;
+}
+
+#course-details-overview .review-message .item .message {
+    font-family: roboto-300;
+    font-size: 14px;
+    color: #2C2C2C;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Book Details Page
+=======================================================================================================================================*/
+
+
+/* =================Book Summary================= */
+
+#book-details-overview .book-summary {
+    background-color: #29303B;
+    padding: 30px 0;
+}
+
+#book-details-overview .book-summary .content {
+    position: relative;
+}
+
+
+/* Book Summary Text */
+
+#book-details-overview .book-summary .content .text {
+    width: 70%;
+}
+
+#book-details-overview .book-summary .content .text .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#book-details-overview .book-summary .content .text .breadcrumb .breadcrumb-item a,
+.breadcrumb-item.active {
+    font-family: roboto-700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#book-details-overview .book-summary .content .text .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    content: '>';
+    color: #FFFFFF;
+}
+
+#book-details-overview .book-summary .content .text .book-name p {
+    font-family: roboto-700;
+    font-size: 35px;
+    color: #FFFFFF;
+    margin: 30px 0;
+}
+
+#book-details-overview .book-summary .content .text .short-description p {
+    font-family: roboto-400;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+
+#book-details-overview .book-summary .content .text .user,
+#book-details-overview .book-summary .content .text .created {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#book-details-overview .book-summary .content .text .user .rating {
+    font-family: roboto-400;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+#book-details-overview .book-summary .content .text .user .rating .fas {
+    font-size: 14px;
+    color: #F4BD01;
+}
+
+
+/* Book Summary Card */
+
+#book-details-overview .book-summary .content .card {
+    position: fixed;
+    top: 160px;
+    left: 90%;
+    transform: translateX(-90%);
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #C4BBBB;
+    border-radius: 0;
+    z-index: 999;
+}
+
+#book-details-overview .book-summary .content .card .card-image {
+    position: relative;
+    text-align: center;
+}
+
+#book-details-overview .book-summary .content .card .card-body .price {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px;
+}
+
+#book-details-overview .book-summary .content .card .card-body .price .main-price p {
+    font-family: roboto-700;
+    font-size: 22px;
+    color: #0F0F0F;
+}
+
+#book-details-overview .book-summary .content .card .card-body .price .discount-price p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #474646;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+    min-width: 30px;
+}
+
+#book-details-overview .book-summary .content .card .card-body .price .discount-price p::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #474646;
+}
+
+#book-details-overview .book-summary .content .card .card-body .book-type .buy-btn {
+    font-family: roboto-700;
+    font-size: 22px;
+    color: #FFFFFF;
+    background-color: #F44A4A;
+    border: 0;
+    border-radius: 0;
+    padding: .375rem .75rem;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#book-details-overview .book-summary .content .card .card-body .book-type .radio-item .form-check-label {
+    font-family: roboto-300;
+    font-size: 20px;
+    color: #1F1F1F;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
+#book-details-overview .book-summary .content .card .card-body .book-type .radio-item .form-check-label input[type='radio'] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    outline: none;
+    margin-right: 10px;
+}
+
+#book-details-overview .book-summary .content .card .card-body .book-type .radio-item .form-check-label input[type='radio']:before {
+    content: '';
+    display: block;
+    height: 12px;
+    width: 12px;
+    margin: 3px auto;
+    border-radius: 50%;
+}
+
+#book-details-overview .book-summary .content .card .card-body .book-type .radio-item .form-check-label input[type='radio']:checked:before {
+    background: #F44A4A;
+}
+
+#book-details-overview .book-summary .content .card .card-body .book-include p {
+    font-family: roboto-700;
+    font-size: 18px;
+    color: #7C7C7A;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+#book-details-overview .book-summary .content .card .card-body .book-include ul {
+    padding-left: 40px;
+}
+
+#book-details-overview .book-summary .content .card .card-body .book-include ul li {
+    font-family: roboto-500;
+    font-size: 16px;
+    color: #7C7C7A;
+}
+
+#book-details-overview .book-summary .content .card .card-body .share-btn .btn {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #0284A2;
+    display: block;
+    margin-top: 30px;
+    border-top: 1px solid #C4BBBB;
+}
+
+
+/* =================Description================= */
+
+#book-details-overview .description .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #29303B;
+    margin: 20px 0;
+}
+
+#book-details-overview .description p {
+    font-family: roboto-300;
+    font-size: 18px;
+    color: #29303B;
+}
+
+
+/* =================Book Review================= */
+
+#book-details-overview .book-review {
+    margin-top: 50px;
+}
+
+#book-details-overview .book-review .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #2C2C2C;
+    margin: 10px 0;
+}
+
+#book-details-overview .book-review .summary .star {
+    display: flex;
+    align-items: center;
+}
+
+#book-details-overview .book-review .summary .star .fas {
+    font-size: 18px;
+    color: #0FBFA1;
+    padding: 0 2px;
+}
+
+#book-details-overview .book-review .summary .star .nocolor {
+    color: #7A7676;
+}
+
+#book-details-overview .book-review .summary .number {
+    font-family: roboto-500;
+    font-size: 18px;
+    color: #2C2C2C;
+    margin-left: 15px;
+}
+
+#book-details-overview .book-review .summary .total {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2C2C2C;
+    margin-top: 5px;
+}
+
+
+/* =================Rating Bar ================= */
+
+#book-details-overview .rating-bar {
+    margin: 25px 0px 50px;
+}
+
+#book-details-overview .rating-bar .rating-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#book-details-overview .rating-bar .rating-item .star {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+#book-details-overview .rating-bar .rating-item .proggressbar {
+    position: relative;
+    overflow: hidden;
+    width: 222px;
+    height: 27px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    margin: 0px 20px;
+}
+
+#book-details-overview .rating-bar .rating-item .proggressbar .proggressbar-percent {
+    position: absolute;
+    height: 100%;
+    background-color: #0FBFA1;
+}
+
+#book-details-overview .rating-bar .rating-item .percent {
+    font-family: roboto-500;
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+
+/* =================Review Message================= */
+
+#book-details-overview .review-message .item {
+    border-top: 1px solid #C4BBBB;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-family: roboto-400;
+    font-size: 14px;
+    color: #2C2C2C;
+}
+
+#book-details-overview .review-message .item .star {
+    color: #0FBFA1;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#book-details-overview .review-message .item .star .name {
+    font-family: roboto-400;
+    font-size: 14px;
+    color: #2C2C2C;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+#book-details-overview .review-message .item .nocolor {
+    color: #757575;
+}
+
+#book-details-overview .review-message .item .message {
+    font-family: roboto-300;
+    font-size: 14px;
+    color: #2C2C2C;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Event Details Page
+=======================================================================================================================================*/
+
+
+/* =================Event Summary================= */
+
+#event-details-overview .event-summary {
+    background-color: #29303B;
+    padding: 30px 0;
+}
+
+#event-details-overview .event-summary .content {
+    position: relative;
+}
+
+
+/* Event Summary Text */
+
+#event-details-overview .event-summary .content .text {
+    width: 70%;
+}
+
+#event-details-overview .event-summary .content .text .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+#event-details-overview .event-summary .content .text .breadcrumb .breadcrumb-item a,
+.breadcrumb-item.active {
+    font-family: roboto-700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#event-details-overview .event-summary .content .text .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    content: '>';
+    color: #FFFFFF;
+}
+
+#event-details-overview .event-summary .content .text .event-name p {
+    font-family: roboto-700;
+    font-size: 35px;
+    color: #FFFFFF;
+    margin: 30px 0;
+}
+
+#event-details-overview .event-summary .content .text .short-description p {
+    font-family: roboto-400;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+
+#event-details-overview .event-summary .content .text .created {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#event-details-overview .event-summary .content .text .user .rating {
+    font-family: roboto-400;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+#event-details-overview .event-summary .content .text .user .rating .fas {
+    font-size: 14px;
+    color: #F4BD01;
+}
+
+
+/* Event Summary Card */
+
+#event-details-overview .event-summary .content .card {
+    position: fixed;
+    top: 160px;
+    left: 90%;
+    transform: translateX(-90%);
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #C4BBBB;
+    border-radius: 0;
+    z-index: 999;
+}
+
+#event-details-overview .event-summary .content .card .card-image {
+    position: relative;
+    text-align: center;
+}
+
+#event-details-overview .event-summary .content .card .card-body .price {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 20px;
+}
+
+#event-details-overview .event-summary .content .card .card-body .price .main-price p {
+    font-family: roboto-700;
+    font-size: 22px;
+    color: #0F0F0F;
+}
+
+#event-details-overview .event-summary .content .card .card-body .reg-btn,
+#event-details-overview .event-summary .content .card .card-body .join-btn {
+    font-family: roboto-700;
+    font-size: 22px;
+    color: #FFFFFF;
+    background-color: #F44A4A;
+    border: 0;
+    border-radius: 0;
+    padding: .375rem .75rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#event-details-overview .event-summary .content .card .card-body .join-btn {
+    color: #F44A4A;
+    background-color: #FFFFFF;
+    border: 1px solid #F44A4A;
+}
+
+#event-details-overview .event-summary .content .card .card-body .share-btn .btn {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #0284A2;
+    display: block;
+    margin-top: 70px;
+    border-top: 1px solid #C4BBBB;
+}
+
+
+/* =================Description================= */
+
+#event-details-overview .description {
+    margin-top: 50px;
+}
+
+#event-details-overview .description .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #29303B;
+    margin: 20px 0;
+}
+
+#event-details-overview .description p {
+    font-family: roboto-300;
+    font-size: 18px;
+    color: #29303B;
+}
+
+
+/* =================Book Review================= */
+
+#event-details-overview .event-review {
+    margin-top: 50px;
+}
+
+#event-details-overview .event-review .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #2C2C2C;
+    margin: 10px 0;
+}
+
+#event-details-overview .event-review .summary .star {
+    display: flex;
+    align-items: center;
+}
+
+#event-details-overview .event-review .summary .star .fas {
+    font-size: 18px;
+    color: #0FBFA1;
+    padding: 0 2px;
+}
+
+#event-details-overview .event-review .summary .star .nocolor {
+    color: #7A7676;
+}
+
+#event-details-overview .event-review .summary .number {
+    font-family: roboto-500;
+    font-size: 18px;
+    color: #2C2C2C;
+    margin-left: 15px;
+}
+
+#event-details-overview .event-review .summary .total {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2C2C2C;
+    margin-top: 5px;
+}
+
+
+/* =================Rating Bar ================= */
+
+#event-details-overview .rating-bar {
+    margin: 25px 0px 50px;
+}
+
+#event-details-overview .rating-bar .rating-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#event-details-overview .rating-bar .rating-item .star {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+#event-details-overview .rating-bar .rating-item .proggressbar {
+    position: relative;
+    overflow: hidden;
+    width: 222px;
+    height: 27px;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    margin: 0px 20px;
+}
+
+#event-details-overview .rating-bar .rating-item .proggressbar .proggressbar-percent {
+    position: absolute;
+    height: 100%;
+    background-color: #0FBFA1;
+}
+
+#event-details-overview .rating-bar .rating-item .percent {
+    font-family: roboto-500;
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+
+/* =================Review Message================= */
+
+#event-details-overview .review-message .item {
+    border-top: 1px solid #C4BBBB;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-family: roboto-400;
+    font-size: 14px;
+    color: #2C2C2C;
+}
+
+#event-details-overview .review-message .item .star {
+    color: #0FBFA1;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#event-details-overview .review-message .item .star .name {
+    font-family: roboto-400;
+    font-size: 14px;
+    color: #2C2C2C;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+#event-details-overview .review-message .item .nocolor {
+    color: #757575;
+}
+
+#event-details-overview .review-message .item .message {
+    font-family: roboto-300;
+    font-size: 14px;
+    color: #2C2C2C;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Purchased Course Page
+=======================================================================================================================================*/
+
+
+/* =======================================Progress======================================= */
+
+#purchased-course .course-progress {
+    background-color: #3C424C;
+}
+
+
+/* Image */
+
+#purchased-course .course-progress .image {
+    position: relative;
+}
+
+#purchased-course .course-progress .image i {
+    font-size: 50px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Text */
+
+#purchased-course .course-progress .text .title {
+    font-family: roboto-500;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+#purchased-course .course-progress .text p {
+    font-family: roboto-300;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+
+#purchased-course .course-progress .progress {
+    height: 15px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+#purchased-course .course-progress .progress .progress-bar {
+    background-color: #F44A4A;
+    border-radius: 10px;
+}
+
+#purchased-course .course-progress .btn {
+    font-family: roboto-500;
+    font-size: 20px;
+    padding: 10px 25px;
+    color: #FFFFFF;
+    background-color: #F44A4A;
+    border-radius: 0;
+    margin-top: 25px;
+}
+
+
+/* =========================================Navbar========================================= */
+
+
+/* ==================Buttons================== */
+
+#purchased-course .course-navabr .navbar-button {
+    margin: 20px 0;
+}
+
+#purchased-course .course-navabr ul#pills-tab {
+    justify-content: space-between;
+    border-bottom: 1px solid #707070;
+}
+
+#purchased-course .course-navabr .nav-pills .nav-link {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2C2C2C;
+    text-transform: capitalize;
+    background-color: #FFFFFF;
+    border-radius: 0;
+}
+
+#purchased-course .course-navabr .nav-pills .nav-link.active {
+    color: #2C2C2C;
+    background-color: #FFFFFF;
+    border-bottom: 5px solid #087DAA;
+}
+
+
+/* ==================Content================== */
+
+
+/* ------------OverView------------ */
+
+
+/* Learn */
+
+#overview .learn {
+    margin: 30px 0;
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: 1px solid #C4BBBB;
+}
+
+#overview .learn .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #777777;
+    margin: 20px 0;
+}
+
+#overview .learn .item {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #777777;
+    display: flex;
+    align-items: baseline;
+    margin: 10px 0;
+}
+
+#overview .learn .item .far {
+    font-size: 20px;
+}
+
+
+/* Requirement */
+
+#overview .requirement .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #29303B;
+    margin: 20px 0;
+}
+
+#overview .requirement ul li {
+    font-family: roboto-300;
+    font-size: 14px;
+    color: #29303B;
+    margin-left: 22px;
+}
+
+#overview .requirement ul li::marker {
+    color: #707070;
+    font-size: 25px;
+}
+
+
+/* Description */
+
+#overview .description .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #29303B;
+    margin: 20px 0;
+}
+
+#overview .description p {
+    font-family: roboto-300;
+    font-size: 18px;
+    color: #29303B;
+}
+
+#overview .description p a {
+    color: #0284A2;
+    text-transform: capitalize;
+    text-decoration: underline !important;
+}
+
+
+/* Instructor */
+
+#overview .instructor {
+    margin: 50px 0;
+}
+
+#overview .instructor .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #29303B;
+    margin: 20px 0;
+}
+
+#overview .instructor .image {
+    height: 90px;
+    width: 90px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 0;
+    margin-right: 20px;
+}
+
+#overview .instructor .name {
+    font-family: roboto-500;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+
+#overview .instructor .name span {
+    font-family: roboto-300;
+}
+
+#overview .instructor .about {
+    font-family: roboto-300;
+    font-size: 18px;
+    color: #29303B;
+    margin: 20px 0;
+}
+
+
+/* ------------Course Content------------ */
+
+
+/*Title */
+
+#course-content .course-content .title {
+    padding: 20px 0;
+}
+
+#course-content .course-content .title h3 {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #707070;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+#course-content .course-content .title .total-item {
+    display: flex;
+}
+
+#course-content .course-content .title .total-item p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #707070;
+    margin-right: 10px;
+}
+
+
+/* Course Content Title */
+
+#course-content .course-content .section-title {
+    cursor: pointer;
+    padding: 10px 18px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #C4BBBB;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#course-content .course-content .section-title .left-part,
+#course-content .course-content .section-title .right-part {
+    display: flex;
+    align-items: center;
+}
+
+#course-content .course-content .section-title .left-part .fas {
+    font-size: 20px;
+    color: #3C3B37;
+    margin-right: 20px;
+}
+
+#course-content .course-content .section-title .left-part .text {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #3C3B37;
+    text-transform: capitalize;
+}
+
+#course-content .course-content .section-title .right-part p {
+    font-family: roboto-500;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #777777;
+}
+
+
+/* Course Content Type */
+
+#course-content .course-content .content {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #C4BBBB;
+    padding: 0 25px 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+#course-content .course-content .content .type {
+    display: flex;
+    align-items: center;
+}
+
+#course-content .course-content .content .type .fas {
+    font-size: 20px;
+    color: #C4BBBB;
+    width: 30px;
+}
+
+#course-content .course-content .content .preview {
+    display: flex;
+    align-items: center;
+}
+
+#course-content .course-content .content .preview .time {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #707070;
+}
+
+#course-content .course-content .content .type a,
+#course-content .course-content .content .preview a {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #0F7C90;
+    margin: 0 10px;
+    text-decoration: underline !important;
+}
+
+#course-content .course-content .content .type p {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #707070;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#course-content .course-content .more-item {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #1B8396;
+    text-transform: capitalize;
+    border: 1px solid #1B8396;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    padding: 12px 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+/* ------------Live Class------------ */
+
+#live-class .title {
+    font-family: roboto-500;
+    font-size: 24px;
+    color: #2C2C2C;
+    margin: 20px 0;
+}
+
+#live-class .item {
+    width: 350px;
+}
+
+#live-class .item .name {
+    font-family: roboto-500;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#live-class .item p {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+
+#live-class .item .btn {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background-color: #757575;
+    border-radius: 0;
+    margin: 20px 0;
+    display: block;
+}
+
+#live-class .item .btn.blue {
+    background-color: #087DAA;
+}
+
+
+/* ------------Quiz------------ */
+
+#quiz {
+    position: relative;
+    padding: 100px 0 300px;
+}
+
+#quiz .text {
+    text-align: center;
+}
+
+#quiz .text .title {
+    font-family: roboto-500;
+    font-size: 35px;
+    color: #2C2C2C;
+}
+
+#quiz .text p {
+    font-family: roboto-400;
+    font-size: 25px;
+    color: #545353;
+}
+
+#quiz .image {
+    width: 200px;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+}
+
+
+/* Quiz Items*/
+
+#quiz .item {
+    width: 350px;
+}
+
+#quiz .item .name {
+    font-family: roboto-500;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#quiz .item p {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+
+#quiz .item .btn {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background-color: #757575;
+    border-radius: 0;
+    margin: 20px 0;
+    display: block;
+}
+
+#quiz .item .btn.blue {
+    background-color: #087DAA;
+}
+
+
+/* ------------Assignment------------ */
+
+#assignment {
+    position: relative;
+    padding: 100px 0 300px;
+}
+
+#assignment .text {
+    text-align: center;
+}
+
+#assignment .text .title {
+    font-family: roboto-500;
+    font-size: 35px;
+    color: #2C2C2C;
+}
+
+#assignment .text p {
+    font-family: roboto-400;
+    font-size: 25px;
+    color: #545353;
+}
+
+#assignment .image {
+    width: 200px;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+}
+
+
+/* Assignment Items*/
+
+#assignment .item {
+    width: 350px;
+}
+
+#assignment .item .name {
+    font-family: roboto-500;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#assignment .item p {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+
+#assignment .item .btn {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background-color: #757575;
+    border-radius: 0;
+    margin: 20px 0;
+    display: block;
+}
+
+#assignment .item .btn.blue {
+    background-color: #087DAA;
+}
+
+#assignment .item .btn.red {
+    background-color: #F44A4A;
+}
+
+
+/* Submit Assignment */
+
+#assignment .submit-assignment {
+    width: 60%;
+}
+
+#assignment .submit-assignment .name {
+    font-family: roboto-500;
+    font-size: 24px;
+}
+
+#assignment .submit-assignment p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #2C2C2C;
+    margin: 10px 0;
+}
+
+#assignment .submit-assignment .bold {
+    font-family: roboto-500;
+}
+
+#assignment .submit-assignment .up-file .custom-file-label {
+    border-radius: 0;
+}
+
+#assignment .submit-assignment .up-file p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+#assignment .submit-assignment .up-file .submit-time {
+    text-align: right;
+}
+
+#assignment .submit-assignment .up-file .btn {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background-color: #087DAA;
+    border-radius: 0;
+    margin: 20px 0;
+    width: 50%;
+}
+
+
+/* ------------Resource------------ */
+
+
+/*Title */
+
+#resource .resource-content .title {
+    padding: 20px 0;
+}
+
+#resource .resource-content .title h3 {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #707070;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+#resource .resource-content .title .total-item {
+    display: flex;
+}
+
+#resource .resource-content .title .total-item p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #707070;
+    margin-right: 10px;
+}
+
+
+/* Course Content Title */
+
+#resource .resource-content .section-title {
+    cursor: pointer;
+    padding: 10px 18px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #C4BBBB;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#resource .resource-content .section-title .left-part,
+#resource .resource-content .section-title .right-part {
+    display: flex;
+    align-items: center;
+}
+
+#resource .resource-content .section-title .left-part .fas {
+    font-size: 20px;
+    color: #3C3B37;
+    margin-right: 20px;
+}
+
+#resource .resource-content .section-title .left-part .text {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #3C3B37;
+    text-transform: capitalize;
+}
+
+#resource .resource-content .section-title .right-part p {
+    font-family: roboto-500;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #777777;
+}
+
+
+/* Course Content Type */
+
+#resource .resource-content .resource {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #C4BBBB;
+    padding: 0 25px 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+#resource .resource-content .resource .type {
+    display: flex;
+    align-items: center;
+}
+
+#resource .resource-content .resource .type .fas {
+    font-size: 20px;
+    color: #C4BBBB;
+    width: 30px;
+}
+
+#resource .resource-content .resource .preview {
+    display: flex;
+    align-items: center;
+}
+
+#resource .resource-content .resource .preview .time {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #707070;
+}
+
+#resource .resource-content .resource .type a,
+#resource .resource-content .resource .preview a {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #0F7C90;
+    margin: 0 10px;
+    text-decoration: underline !important;
+}
+
+#resource .resource-content .resource .type p {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #707070;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#resource .resource-content .more-item {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #1B8396;
+    text-transform: capitalize;
+    border: 1px solid #1B8396;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+    padding: 12px 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+/* ------------Announcement------------ */
+
+#announcement {
+    padding: 30px 0;
+}
+
+#announcement .items .title p {
+    font-family: roboto-400;
+    font-size: 24px;
+    color: #414141;
+}
+
+#announcement .items .title .total {
+    font-size: 16px;
+    color: #545353;
+    margin-bottom: 30px;
+}
+
+#announcement .items .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#announcement .items .item .image {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 1px solid #707070;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+#announcement .items .item .text {
+    width: 85%;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+#announcement .items .item .text .name {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+}
+
+#announcement .items .item .text p {
+    font-family: roboto-300;
+    font-size: 16px;
+    color: #2c2c2c;
+}
+
+#announcement .items .item .text p a {
+    text-decoration: underline !important;
+    color: #00A5EC;
+}
+
+#announcement .items .btn {
+    font-family: roboto-500;
+    font-size: 16px;
+    border: 1px solid;
+    margin: 20px 0;
+    display: block;
+    color: #1B8396;
+}
+
+#announcement .new-item {
+    padding: 20px;
+    background-color: #f6f6f6;
+}
+
+#announcement .new-item p {
+    font-family: roboto-500;
+    font-size: 16px;
+    color: #2C2C2C;
+    margin-bottom: 20px;
+}
+
+#announcement .new-item textarea {
+    resize: none;
+    height: 120px;
+    width: 100%;
+    padding: 10px;
+    border-color: #707070;
+    border-radius: 10px;
+}
+
+#announcement .new-item .btn {
+    font-family: roboto-500;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #F44A4A;
+    width: 100%;
+    border-radius: 0;
+    margin-top: 10px;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Blog Page
+=======================================================================================================================================*/
+
+
+/* ==================Blog Items================== */
+
+#blog-page .item {
+    border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+
+/* Title */
+
+#blog-page .item .title {
+    margin: 20px 0;
+}
+
+#blog-page .item .title p {
+    font-family: roboto-700;
+    font-size: 30px;
+    color: #2C2C2C;
+}
+
+#blog-page .item .creator p {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2C2C2C;
+    padding-right: 5px;
+}
+
+#blog-page .item .creator .name {
+    border-right: 1px solid #2C2C2C;
+    margin-right: 5px;
+}
+
+
+/* Image */
+
+#blog-page .item .image {
+    margin: 20px 0 30px;
+    border: 1px solid rgba(112, 112, 112, 0.7);
+}
+
+
+/* Description */
+
+#blog-page .item .description p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #7B8591;
+    margin-bottom: 40px;
+}
+
+
+/* Continue Reading */
+
+#blog-page .item .read {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#blog-page .item .read a {
+    font-family: roboto-700;
+    font-size: 20px;
+    color: #000000;
+}
+
+
+/* ==================Blog Menu================== */
+
+#blog-page .blog-menu ul {
+    list-style-type: none;
+}
+
+#blog-page .blog-menu .archives,
+#blog-page .blog-menu .category {
+    margin: 30px 0;
+    text-align: right;
+}
+
+#blog-page .blog-menu .archives .title,
+#blog-page .blog-menu .category .title {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#blog-page .blog-menu .archives a {
+    font-family: roboto-300;
+    font-size: 18px;
+    color: #1989F6;
+}
+
+#blog-page .blog-menu .category a {
+    font-family: roboto-300;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Single Blog Page
+=======================================================================================================================================*/
+
+
+/* ==================Title================== */
+
+#single-blog-page .title {
+    margin: 20px 0;
+}
+
+#single-blog-page .title p {
+    font-family: roboto-700;
+    font-size: 50px;
+    color: #2C2C2C;
+}
+
+#single-blog-page .creator p {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2C2C2C;
+    padding-right: 5px;
+}
+
+#single-blog-page .creator .name {
+    border-right: 1px solid #2C2C2C;
+    margin-right: 5px;
+}
+
+
+/* ==================Image================== */
+
+#single-blog-page .image {
+    margin: 20px 0 30px;
+}
+
+
+/* ==================Description================== */
+
+#single-blog-page .description p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #7B8591;
+    margin-bottom: 40px;
+}
+
+
+/* ==================Related Items================== */
+
+#single-blog-page .related-items {
+    background-color: #F3F3F3;
+    padding: 20px 0 30px;
+}
+
+#single-blog-page .related-items .item .image {
+    height: 200px;
+    border: 1px solid #707070;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#single-blog-page .related-items .item .image img {
+    width: 100%;
+}
+
+#single-blog-page .related-items .item .text .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #2C2C2C;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+
+#single-blog-page .related-items .item .text .creator {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #2C2C2C;
+    text-transform: capitalize;
+    margin: 15px 0;
+}
+
+#single-blog-page .related-items .item .text p {
+    font-family: roboto-400;
+    color: #2C2C2C;
+    font-size: 16px;
+}
+
+#single-blog-page .related-items .item .text p span {
+    color: #142AF3;
+}
+
+#single-blog-page .related-items .text p span a {
+    font-family: roboto-500;
+    color: #142AF3;
+    text-decoration: underline !important;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Cart Page
+=======================================================================================================================================*/
+
+#cart .total-item p {
+    font-family: roboto-700;
+    font-size: 22px;
+    color: #252525;
+    margin-bottom: 30px;
+}
+
+
+/* =================Cartbox================= */
+
+#cart .cartbox {
+    border: 1px solid #C5C5C5;
+}
+
+#cart .cartbox .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #C5C5C5;
+}
+
+#cart .cartbox .item:first-child {
+    border: none;
+}
+
+#cart .cartbox .item .image {
+    width: 19%;
+}
+
+#cart .cartbox .item .name {
+    width: 40%;
+}
+
+#cart .cartbox .item .name p {
+    font-family: roboto-700;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+
+#cart .cartbox .item .name .creator {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #757575;
+}
+
+#cart .cartbox .item .button {
+    width: 19%;
+    text-align: right;
+}
+
+#cart .cartbox .item .button a {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #007791;
+    display: block;
+}
+
+#cart .cartbox .item .price {
+    width: 19%;
+    text-align: right;
+}
+
+#cart .cartbox .item .price p {
+    font-family: roboto-700;
+    font-size: 16px;
+    color: #EC5252;
+}
+
+
+/* =================Order Summary================= */
+
+#cart .order-summary {
+    padding: 20px 10px;
+    border: 1px solid #707070;
+}
+
+#cart .order-summary .title {
+    font-family: roboto-700;
+    font-size: 24px;
+    color: #252525;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #707070;
+}
+
+#cart .order-summary .price p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #6B6A6A;
+    margin: 10px 0;
+}
+
+#cart .order-summary .price p span {
+    color: #252525;
+    float: right;
+}
+
+#cart .order-summary .price p a {
+    color: #0F8AA7;
+    float: right;
+}
+
+#cart .order-summary .total-price {
+    border-top: 1px solid #707070;
+}
+
+#cart .order-summary .total-price p {
+    font-family: roboto-400;
+    font-size: 20px;
+    color: #252525;
+    margin: 20px 0;
+}
+
+#cart .order-summary .total-price p span {
+    float: right;
+}
+
+#cart .order-summary .terms p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #252525;
+}
+
+#cart .order-summary .terms a {
+    font-family: roboto-500;
+    font-size: 16px;
+    color: #0267B6;
+    text-decoration: underline !important;
+}
+
+#cart .order-summary .checkout .btn {
+    font-family: roboto-500;
+    font-size: 18px;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+    background-color: #EC5252;
+    border-radius: 0;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+#cart .order-summary .coupon .input-group input.form-control {
+    color: #757575;
+    border: 1px solid #EC5252 !important;
+    border-radius: 0 !important;
+}
+
+#cart .order-summary .input-group-text {
+    color: #FFFFFF;
+    background-color: #EC5252;
+    border: 1px solid #EC5252;
+    border-radius: 0;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Purchase History Page
+=======================================================================================================================================*/
+
+
+/* =================Item Heading================= */
+
+#purchase-history .heading {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+#purchase-history .heading p {
+    font-family: roboto-500;
+    font-size: 16px;
+    color: #000000;
+}
+
+
+/* =================Items================= */
+
+#purchase-history .items .item {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+#purchase-history .items .item .image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#purchase-history .items .item .image img {
+    width: 45%;
+    border: 1px solid rgba(112, 112, 112, 0.5);
+}
+
+#purchase-history .items .item .image p {
+    font-family: roboto-700;
+    font-size: 16px;
+    color: #218991;
+}
+
+#purchase-history .items .item p {
+    font-family: roboto-500;
+    font-size: 14px;
+    color: #343434;
+}
+
+#purchase-history .items .item a {
+    font-family: roboto-500;
+    font-size: 14px;
+    color: #178A93;
+    padding: 5px 10px;
+    border: 1px solid #178A93;
+    border-radius: 3px;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Authentication Page
+=======================================================================================================================================*/
+
+#authentication {
+    padding: 50px 0;
+    background: url('../media/img/authentication/Background\ Pattern.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* =================Image================= */
+
+#authentication .image {
+    text-align: center;
+}
+
+#authentication .image .logo {
+    margin-bottom: 70px;
+}
+
+#authentication .image .logo img {
+    max-width: 250px;
+}
+
+#authentication .image img {
+    width: 70%;
+}
+
+
+/* =================Authentication Form================= */
+
+#authentication input::-webkit-outer-spin-button,
+#authentication input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+#authentication .auth-form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#authentication .auth-form::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #999999;
+}
+
+#authentication .auth-form .text {
+    text-align: center;
+    padding: 30px 0;
+}
+
+#authentication .auth-form .text .title {
+    font-family: roboto-700;
+    font-size: 28px;
+    color: #696969;
+    text-transform: uppercase;
+}
+
+#authentication .auth-form .text p {
+    font-family: roboto-400;
+    font-size: 14px;
+    color: #696969;
+}
+
+#authentication .auth-form .text p a {
+    font-family: roboto-500;
+    color: #228B22;
+}
+
+#authentication .auth-form .form-control {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #999999;
+    border: 1px solid #999999;
+}
+
+#authentication .auth-form .auth-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #DC143C;
+    border-radius: 5px;
+    border: 0;
+    margin: 20px 0;
+    font-family: roboto-500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+#authentication .auth-form .alter {
+    text-align: center;
+}
+
+#authentication .auth-form .alter .title {
+    font-family: roboto-500;
+    font-size: 16px;
+    color: #999999;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 20PX;
+}
+
+#authentication .auth-form .alter .title::after,
+#authentication .auth-form .alter .title::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    width: 45%;
+    height: 1px;
+    background-color: #999999;
+}
+
+#authentication .auth-form .alter .title::before {
+    left: 55%;
+}
+
+#authentication .auth-form .alter P {
+    font-family: roboto-500;
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 20px;
+}
+
+#authentication .auth-form .alter .social-site a .fab {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #1877F2;
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0 10px;
+}
+
+#authentication .auth-form .alter .social-site a:last-child .fab {
+    background-color: #D21010;
+}
+
+#authentication .auth-form .resend {
+    display: flex;
+    justify-content: center;
+    font-family: roboto-400;
+    font-size: 14px;
+    color: #696969;
+}
+
+#authentication .auth-form .resend button {
+    border: 0;
+    margin-left: 10px;
+    color: #696969;
+}
+
+
+/* =================Login================= */
+
+#authentication .auth-form .forgot-pass {
+    font-family: roboto-500;
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 20px;
+}
+
+#authentication .auth-form label.form-check-label {
+    font-family: roboto-500;
+    font-size: 18px;
+    color: #228B22 !important;
+}
+
+
+/* =================Sign Up================= */
+
+#authentication .auth-form .terms {
+    font-family: roboto-400;
+    font-size: 14px;
+    color: #696969;
+    margin: 15px 0;
+}
+
+#authentication .auth-form .terms a {
+    font-family: roboto-500;
+    color: #228B22;
+}
+
+
+/* =================Forgot Password================= */
+
+#authentication .forgot-form {
+    padding: 100px 0;
+}
+
+
+/* =================Change Password================= */
+
+#authentication .change-form {
+    padding: 80px 0;
+}
+
+
+/* =================Verify================= */
+
+#authentication .verify-form {
+    padding: 80px 0;
+}
+
+#authentication .verify-form .form-control {
+    text-align: center;
+    height: 55px;
+    width: 55px;
+    padding: 10px;
+    margin: 0px 10px;
+    font-family: roboto-700;
+    font-size: 25px;
+    color: #696969 !important;
+    border-color: #707070 !important;
+}
+
+#authentication .verify-form .form-control::placeholder {
+    color: #696969 !important;
+}
+
+#authentication .verify-form .code-expire {
+    font-family: roboto-400;
+    font-size: 14px;
+    color: #696969;
+    text-align: center;
+    margin: 15px 0;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Profile Page
+=======================================================================================================================================*/
+
+
+/* =================Details================= */
+
+#profile-page .details {
+    background-color: #181F47;
+    padding: 30px 20px 70px;
+}
+
+#profile-page .details .user {
+    padding: 30px 0 50px;
+    text-align: center;
+}
+
+#profile-page .details .user .image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#profile-page .details .user p {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+#profile-page .details .menu {
+    padding: 100px 0;
+}
+
+#profile-page .details .menu ul li {
+    padding: 10px 0;
+}
+
+#profile-page .details .menu ul li a {
+    font-family: roboto-500;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+
+#profile-page .details .menu ul li a i {
+    font-size: 16px;
+    width: 30px;
+}
+
+
+/* =================Personal Information================= */
+
+#profile-page .personal-information .title {
+    font-family: roboto-500;
+    font-size: 22px;
+    color: #000000;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.7);
+    margin-bottom: 20px;
+}
+
+#profile-page .personal-information label {
+    font-family: roboto-500;
+    font-size: 16px;
+    color: #000;
+}
+
+#profile-page .personal-information .form-control {
+    border-radius: 0;
+    border-color: #707070;
+}
+
+#profile-page .personal-information textarea {
+    resize: none;
+    height: 100px;
+}
+
+#profile-page .personal-information textarea#about {
+    height: 200px;
+}
+
+#profile-page .personal-information .btn {
+    font-family: roboto-500;
+    font-size: 16px;
+    float: right;
+    padding: 10px 25px;
+    width: 250px;
+    background-color: #181F47;
+    color: #FFFFFF;
+    border-radius: 0;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Dashboard Course and Wishlist Page
+=======================================================================================================================================*/
+
+#course-wishlist {
+    margin-bottom: 50px;
+}
+
+
+/* ============================Navbar============================ */
+
+#course-wishlist .menu {
+    background-color: #E9F104;
+    padding-top: 30px;
+}
+
+#course-wishlist .nav-pills .nav-link {
+    font-family: roboto-500;
+    font-size: 18px;
+    border-radius: 0;
+    color: #252525;
+}
+
+#course-wishlist .nav-pills .nav-link.active {
+    background-color: transparent !important;
+    color: #252525;
+    border-bottom: 5px solid #777777;
+}
+
+
+/* ============================My Course============================ */
+
+#course-wishlist #course-tab .item {
+    margin: 20px 0 10px !important;
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+#course-wishlist #course-tab .item .image {
+    height: 150px;
+    overflow: hidden;
+}
+
+#course-wishlist #course-tab .item .content {
+    padding: 20px 10px 10px;
+}
+
+#course-wishlist #course-tab .item .content .title {
+    font-family: roboto-500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#course-wishlist #course-tab .item .content .sub-title {
+    font-family: roboto-400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#course-wishlist #course-tab .item .content .review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#course-wishlist #course-tab .item .content .review .star {
+    margin-right: 10px;
+}
+
+#course-wishlist #course-tab .item .content .review .star .fas {
+    font-size: 14px;
+    color: #FFC107;
+}
+
+#course-wishlist #course-tab .item .content .review .summary p {
+    font-family: roboto-400;
+    font-size: 14px;
+}
+
+#course-wishlist #course-tab .item .content .progress {
+    height: 5px;
+    border-radius: 5px;
+    background-color: #CDCDCD;
+}
+
+#course-wishlist #course-tab .item .content .progress .progress-bar {
+    background-color: #F44A4A;
+}
+
+#course-wishlist #course-tab .item .content .percantage p {
+    font-family: roboto-400;
+    font-size: 14px;
+    color: #0F0F0F;
+    margin-top: 10px;
+}
+
+
+/* ============================Wishlist============================ */
+
+
+/* Course */
+
+#course-wishlist #wishlist-tab .course .title,
+#course-wishlist #wishlist-tab .book .title {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #087DAA;
+    margin-top: 30px;
+}
+
+#course-wishlist #wishlist-tab .course .item {
+    margin: 20px 0 10px !important;
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+#course-wishlist #wishlist-tab .course .item .image {
+    height: 150px;
+    overflow: hidden;
+}
+
+#course-wishlist #wishlist-tab .course .item .content {
+    padding: 20px 10px 10px;
+}
+
+#course-wishlist #wishlist-tab .course .item .content .title {
+    font-family: roboto-500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#course-wishlist #wishlist-tab .course .item .content .sub-title {
+    font-family: roboto-400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#course-wishlist #wishlist-tab .course .item .content .review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#course-wishlist #wishlist-tab .course .item .content .review .star {
+    margin-right: 10px;
+}
+
+#course-wishlist #wishlist-tab .course .item .content .review .star .fas {
+    font-size: 14px;
+    color: #FFC107;
+}
+
+#course-wishlist #wishlist-tab .course .item .content .review .summary p {
+    font-family: roboto-400;
+    font-size: 14px;
+}
+
+#course-wishlist #wishlist-tab .course .item .content .button {
+    display: flex;
+    justify-content: space-between;
+}
+
+#course-wishlist #wishlist-tab .course .item .content .button .btn {
+    font-family: roboto-500;
+    font-size: 18px;
+    background-color: #E13F00;
+    color: #FFF;
+}
+
+#course-wishlist #wishlist-tab .course .item .content .button .btn:first-child {
+    width: 70%;
+}
+
+#course-wishlist #wishlist-tab .course .item .content .button .wish-btn {
+    border: 1px solid;
+    border: 1px solid #087DAA;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+#course-wishlist #wishlist-tab .course .item .content .button .wish-btn i {
+    font-size: 18px;
+    line-height: 18px;
+    color: #E13F00;
+}
+
+
+/* Book */
+
+#course-wishlist #wishlist-tab .book .item {
+    margin: 20px 0 10px !important;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #B2B2B2;
+}
+
+#course-wishlist #wishlist-tab .book .item .image {
+    height: 200px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+#course-wishlist #wishlist-tab .book .item .content .title {
+    font-family: roboto-500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: left;
+}
+
+#course-wishlist #wishlist-tab .book .item .content .sub-title {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #717171;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#course-wishlist #wishlist-tab .book .item .content .wish-btn button {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border: 0;
+}
+
+#course-wishlist #wishlist-tab .book .item .content .wish-btn .fas {
+    font-size: 25px;
+    color: #F4BD01;
+    line-height: 35px;
+}
+
+#course-wishlist #wishlist-tab .book .item .content .books-summary {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #B2B2B2;
+}
+
+#course-wishlist #wishlist-tab .book .item .content .books-summary .user,
+#course-wishlist #wishlist-tab .book .item .content .books-summary .comment,
+#course-wishlist #wishlist-tab .book .item .content .books-summary .star {
+    display: flex;
+    align-items: center;
+    color: #B2B2B2;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-right: 1px solid;
+}
+
+#course-wishlist #wishlist-tab .book .item .content .books-summary .star {
+    border: 0;
+    color: #FFC107;
+    padding-left: 25px;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Dashboard Page
+=======================================================================================================================================*/
+
+#dashboard-page .course .title,
+#dashboard-page .book .title {
+    font-family: roboto-500;
+    font-size: 24px;
+    color: #087DAA;
+    margin-top: 30px;
+}
+
+
+/* ============================Course============================ */
+
+#dashboard-page .course .item {
+    margin: 20px 0 10px !important;
+    border-radius: 2px;
+    overflow: hidden;
+    border: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+#dashboard-page .course .item .image {
+    height: 150px;
+    overflow: hidden;
+}
+
+#dashboard-page .course .item .content {
+    padding: 20px 10px 10px;
+}
+
+#dashboard-page .course .item .content .title {
+    font-family: roboto-500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#dashboard-page .course .item .content .sub-title {
+    font-family: roboto-400;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#dashboard-page .course .item .content .review {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#dashboard-page .course .item .content .review .star {
+    margin-right: 10px;
+}
+
+#dashboard-page .course .item .content .review .star .fas {
+    font-size: 14px;
+    color: #FFC107;
+}
+
+#dashboard-page .course .item .content .review .summary p {
+    font-family: roboto-400;
+    font-size: 14px;
+}
+
+#dashboard-page .course .item .content .button {
+    display: flex;
+    justify-content: space-between;
+}
+
+#dashboard-page .course .item .content .button .btn {
+    font-family: roboto-500;
+    font-size: 18px;
+    background-color: #E13F00;
+    color: #FFF;
+}
+
+#dashboard-page .course .item .content .button .btn:first-child {
+    width: 70%;
+}
+
+#dashboard-page .course .item .content .button .wish-btn {
+    border: 1px solid;
+    border: 1px solid #087DAA;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+#dashboard-page .course .item .content .button .wish-btn i {
+    font-size: 18px;
+    line-height: 18px;
+    color: #E13F00;
+}
+
+
+/* ============================Book & Ebook============================ */
+
+#dashboard-page .book .item {
+    margin: 20px 0 10px !important;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #B2B2B2;
+}
+
+#dashboard-page .book .item .image {
+    height: 200px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+#dashboard-page .book .item .content .title {
+    font-family: roboto-500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: left;
+}
+
+#dashboard-page .book .item .content .sub-title {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #717171;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#dashboard-page .book .item .content .wish-btn button {
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border: 0;
+}
+
+#dashboard-page .book .item .content .wish-btn .fas {
+    font-size: 25px;
+    color: #F4BD01;
+    line-height: 35px;
+}
+
+#dashboard-page .book .item .content .books-summary {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #B2B2B2;
+}
+
+#dashboard-page .book .item .content .books-summary .user,
+#dashboard-page .book .item .content .books-summary .comment,
+#dashboard-page .book .item .content .books-summary .star {
+    display: flex;
+    align-items: center;
+    color: #B2B2B2;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-right: 1px solid;
+}
+
+#dashboard-page .book .item .content .books-summary .star {
+    border: 0;
+    color: #FFC107;
+    padding-left: 25px;
+}
+
+
+/*======================================================================================================================================= 
+                                                        View All Course Page
+=======================================================================================================================================*/
+
+#view-all-course .filter {
+    background-color: #F7F7F7;
+    padding: 20px 10px;
+}
+
+#view-all-course .filter .category .title p {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #171716;
+    margin-bottom: 30px;
+}
+
+#view-all-course .form-check-label {
+    font-family: roboto-400;
+}
+
+#view-all-course .form-check-input:checked+.form-check-label {
+    color: #1BA19F !important;
+}
+
+#view-all-course .filter .price {
+    margin-top: 50px;
+}
+
+#view-all-course .filter .price p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #2C2C2C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #B1B0B0;
+}
+
+#view-all-course .filter .price .title {
+    border: 0;
+}
+
+#view-all-course .filter .price .range {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ====================All Course==================== */
+
+#view-all-course .course .title p {
+    font-family: roboto-500;
+    font-size: 25px;
+    color: #087DAA;
+}
+
+#view-all-course .course .title p span {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #8A8A8A;
+}
+
+#view-all-course .course .sort p {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+
+#view-all-course .course .sort .dropdown .sort {
+    width: 100px;
+}
+
+
+/* Item */
+
+#view-all-course .course .item {
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.6);
+}
+
+#view-all-course .course .item .content .text .name {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #2C2C2C;
+    margin-bottom: 15px;
+}
+
+#view-all-course .course .item .content .text .details {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #2C2C2C;
+    margin-bottom: 15px;
+}
+
+#view-all-course .course .item .content .text .description {
+    font-family: roboto-300;
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+#view-all-course .course .item .content .buttons {
+    text-align: right;
+    margin-top: 30px;
+}
+
+#view-all-course .course .item .content .buttons .big {
+    font-family: roboto-500;
+    font-size: 16px;
+    background-color: #E13F00;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+#view-all-course .course .item .content .buttons .wish {
+    height: 45px;
+    width: 45px;
+    border: 1px solid #087DAA;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#view-all-course .course .item .content .buttons .wish i {
+    font-size: 16px;
+    line-height: 16px;
+    color: #087DAA;
+}
+
+#view-all-course .course .item .content .price-rating .price p {
+    font-family: roboto-500;
+    font-size: 18px;
+    color: #2c2c2c;
+}
+
+#view-all-course .course .item .content .price-rating .star i {
+    font-size: 12px;
+    color: #FFC107;
+}
+
+#view-all-course .course .item .content .price-rating .star p {
+    font-size: 14px;
+}
+
+#view-all-course .course .item .content .price-rating .rating {
+    font-size: 16px;
+}
+
+
+/*======================================================================================================================================= 
+                                                        View All Book Page
+=======================================================================================================================================*/
+
+#view-all-book .filter {
+    background-color: #F7F7F7;
+    padding: 20px 10px;
+}
+
+#view-all-book .filter .category .title p {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #171716;
+    margin-bottom: 30px;
+}
+
+#view-all-book .form-check-label {
+    font-family: roboto-400;
+}
+
+#view-all-book .form-check-input:checked+.form-check-label {
+    color: #1BA19F !important;
+}
+
+#view-all-book .filter .price {
+    margin-top: 50px;
+}
+
+#view-all-book .filter .price p {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #2C2C2C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #B1B0B0;
+}
+
+#view-all-book .filter .price .title {
+    border: 0;
+}
+
+#view-all-book .filter .price .range {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* ====================All Book==================== */
+
+#view-all-book .book .title p {
+    font-family: roboto-500;
+    font-size: 25px;
+    color: #087DAA;
+}
+
+#view-all-book .book .title p span {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #8A8A8A;
+}
+
+#view-all-book .book .sort p {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2C2C2C;
+}
+
+#view-all-book .book .sort .dropdown .sort {
+    width: 100px;
+}
+
+
+/* Item */
+
+#view-all-book .book .item {
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+}
+
+#view-all-book .book .item .content .text .name {
+    font-family: roboto-500;
+    font-size: 20px;
+    color: #2C2C2C;
+    margin-bottom: 15px;
+}
+
+#view-all-book .book .item .content .text .details {
+    font-family: roboto-400;
+    font-size: 16px;
+    color: #2C2C2C;
+    margin-bottom: 15px;
+}
+
+#view-all-book .book .item .content .text .description {
+    font-family: roboto-300;
+    font-size: 16px;
+    color: #2C2C2C;
+}
+
+#view-all-book .book .item .content .buttons {
+    text-align: right;
+    margin-top: 30px;
+}
+
+#view-all-book .book .item .content .buttons .big {
+    font-family: roboto-500;
+    font-size: 16px;
+    background-color: #E13F00;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+#view-all-book .book .item .content .buttons .wish {
+    height: 45px;
+    width: 45px;
+    border: 1px solid #087DAA;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#view-all-book .book .item .content .buttons .wish i {
+    font-size: 16px;
+    line-height: 16px;
+    color: #087DAA;
+}
+
+#view-all-book .book .item .content .price-rating .price p {
+    font-family: roboto-500;
+    font-size: 18px;
+    color: #2c2c2c;
+}
+
+#view-all-book .book .item .content .price-rating .star i {
+    font-size: 12px;
+    color: #FFC107;
+}
+
+#view-all-book .book .item .content .price-rating .star p {
+    font-size: 14px;
+}
+
+#view-all-book .book .item .content .price-rating .rating {
+    font-size: 16px;
+}
+
+
+/*======================================================================================================================================= 
+                                                        Course Viddeo Page
+=======================================================================================================================================*/
+
+
+/* Video Player */
+
+#course-video .video-player .title p {
+    font-family: roboto-500;
+    font-size: 24px;
+    color: #000000;
+}
+
+#course-video .video-player .control-btn .btn {
+    font-size: 16px;
+    color: #265CDB;
+}
+
+#course-video .video-player .control-btn .btn i {
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+
+/* Menu */
+
+#course-video .menu {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+#course-video .menu .btn-link {
+    color: #3B3B3B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#course-video .menu .btn-link:hover {
+    color: #3B3B3B;
+    text-decoration: none;
+}
+
+#course-video .menu .btn-link i {
+    font-size: 14px;
+    color: #3B3B3B;
+}
+
+#course-video .menu .btn.focus,
+#course-video .menu .btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+    text-decoration: none;
+}
+
+#course-video .menu .card-body {
+    padding: 10px;
+}
+
+#course-video .menu .card-body p {
+    font-size: 16px;
+    color: #757575;
+}
+
+#course-video .menu .card-body .name {
+    display: flex;
+    align-items: baseline;
+}
+
+#course-video .menu .card-body .name i {
+    font-size: 18px;
+    width: 40px;
+}
+
+#course-video .menu .card-body .name .fa-play-circle {
+    color: #5B5B5B;
+}
+
+#course-video .menu .card-body .name .fa-check-circle {
+    color: #008C00;
+}
+
+
+/* ==========Video Player Navs Start========== */
+
+#course-video .course-video-navs .navbar-button {
+    margin: 20px 0;
+}
+
+#course-video .course-video-navs ul#pills-tab {
+    justify-content: space-between;
+    border-bottom: 1px solid #707070;
+}
+
+#course-video .course-video-navs .nav-pills .nav-link {
+    font-family: roboto-400;
+    font-size: 18px;
+    color: #2C2C2C;
+    text-transform: capitalize;
+    background-color: #FFFFFF;
+    border-radius: 0;
+}
+
+#course-video .course-video-navs .nav-pills .nav-link.active {
+    color: #2C2C2C;
+    background-color: #FFFFFF;
+    border-bottom: 5px solid #087DAA;
+}

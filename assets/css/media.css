@@ -1,0 +1,1174 @@
+                    @media (max-width: 1199.98px) {
+                        /*===================================Home Page===================================*/
+                        /* Quick Preview Slider */
+                        .quick-preview .quick-preview-slider button.owl-next {
+                            left: 97%;
+                        }
+                        /* Books Slider */
+                        #books .books-slider button.owl-next {
+                            left: 96%;
+                        }
+                        /*===================================Course Details Page===================================*/
+                        /* Course Summary Card  */
+                        #course-details-overview .course-summary .content .card {
+                            left: 95%;
+                        }
+                        /*===================================Book Details Page===================================*/
+                        /* Book Summary Card  */
+                        #book-details-overview .book-summary .content .card {
+                            left: 95%;
+                        }
+                        /*===================================Event Details Page===================================*/
+                        /* Event Summary Card  */
+                        #event-details-overview .event-summary .content .card {
+                            left: 95%;
+                        }
+                        /*===================================Dashboard Course and Wishlist Page===================================*/
+                        /* Course */
+                        #course-wishlist #wishlist-tab .course .item .content .button .btn {
+                            font-size: 15px;
+                        }
+                        #course-wishlist #wishlist-tab .course .item .content .button .wish-btn i {
+                            font-size: 15px;
+                            line-height: 15px;
+                        }
+                        /* Book */
+                        #course-wishlist #wishlist-tab .book .item .content .books-summary .user,
+                        #course-wishlist #wishlist-tab .book .item .content .books-summary .comment,
+                        #course-wishlist #wishlist-tab .book .item .content .books-summary .star {
+                            padding: 10px;
+                        }
+                        #course-wishlist #wishlist-tab .book .item .content .books-summary .star {
+                            padding-left: 5px;
+                        }
+                        /*===================================Dashboard Page===================================*/
+                        /* Course */
+                        #dashboard-page .course .item .content .button .btn {
+                            font-size: 15px;
+                        }
+                        #dashboard-page .course .item .content .button .wish-btn i {
+                            font-size: 15px;
+                            line-height: 15px;
+                        }
+                        /* Book */
+                        #dashboard-page .book .item .content .books-summary .user,
+                        #dashboard-page .book .item .content .books-summary .comment,
+                        #dashboard-page .book .item .content .books-summary .star {
+                            padding: 10px;
+                        }
+                        #dashboard-page .book .item .content .books-summary .star {
+                            padding-left: 5px;
+                        }
+                        /*===================================View All Books Page===================================*/
+                        #view-all-book .book .item .content .books-summary .star {
+                            padding: 10px 5px;
+                        }
+                    }
+                    
+                    @media (max-width: 991.98px) {
+                        /* Common */
+                        .section-padding {
+                            padding: 30px 0;
+                        }
+                        /*===================================Home Page===================================*/
+                        /* Quick Preview Slider */
+                        .quick-preview-slider .preview-item {
+                            margin-left: 5px !important;
+                            margin-right: 5px !important;
+                        }
+                        .quick-preview .quick-preview-slider .preview-item .preview-content .title {
+                            font-size: 18px;
+                        }
+                        .quick-preview .quick-preview-slider .preview-item .preview-content .sub-title,
+                        .quick-preview-slider .preview-item .preview-content .review .summary p,
+                        .quick-preview .quick-preview-slider .preview-item .preview-content .review .star .fas {
+                            font-size: 14px;
+                        }
+                        .quick-preview .quick-preview-slider .preview-item .preview-content .preview-btn a.btn {
+                            font-size: 16px;
+                        }
+                        .quick-preview .quick-preview-slider .preview-item .preview-content .preview-btn button.btn {
+                            font-size: 16px;
+                        }
+                        .quick-preview .quick-preview-slider button.owl-next {
+                            left: 96%;
+                        }
+                        /* Event & Webinar Slider*/
+                        #event-webinars .image p {
+                            font-size: 22px;
+                        }
+                        #event-webinars .event-webinars-slider .slider-item .slider-content .title,
+                        #event-webinars .event-webinars-slider .slider-item .slider-content .slider-btn a.btn {
+                            font-size: 18px;
+                        }
+                        #event-webinars .event-webinars-slider .slider-item .slider-content .sub-title,
+                        #event-webinars .event-webinars-slider .slider-item .slider-content .review .summary,
+                        #event-webinars .event-webinars-slider .slider-item .slider-content .review .star .fas {
+                            font-size: 14px;
+                        }
+                        #event-webinars .event-webinars-slider .slider-item .slider-content .slider-btn button.btn {
+                            font-size: 16px;
+                        }
+                        #event-webinars .event-webinars-slider button.owl-next {
+                            left: 90%;
+                        }
+                        /* Books Slider */
+                        #books .books-slider .slider-item {
+                            margin: 20px 5px !important;
+                        }
+                        #books .books-slider .slider-item .slider-content .title {
+                            font-size: 18px;
+                        }
+                        #books .books-slider .slider-item .slider-content .books-summary .star {
+                            padding-left: 5px;
+                        }
+                        #books .books-slider button.owl-next {
+                            left: 95%;
+                        }
+                        /* Survey */
+                        #survey .text h3 {
+                            font-size: 25px;
+                            margin-bottom: 15px;
+                        }
+                        #survey .text p {
+                            font-size: 20px;
+                            margin: 10px 0;
+                        }
+                        #survey .text p span {
+                            font-size: 18px;
+                        }
+                        #survey .text h5 {
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                        }
+                        #survey .text .btn {
+                            font-size: 18px;
+                        }
+                        /* Course Items */
+                        #course-items .image {
+                            height: 150px;
+                        }
+                        #course-items .text .title {
+                            font-size: 18px;
+                        }
+                        #course-items .text .creator,
+                        #course-items .text p {
+                            font-size: 14px;
+                        }
+                        /* Counter */
+                        #counter .counter-item p {
+                            font-size: 25px;
+                        }
+                        #counter .counter-item h3 {
+                            font-size: 40px;
+                        }
+                        /* Subscribe */
+                        #subscribe .form {
+                            padding: 20px 10px;
+                            background-position: 38% -209px;
+                        }
+                        #subscribe .form p {
+                            margin-bottom: 30px;
+                        }
+                        #subscribe .form .form-control {
+                            height: 35px;
+                        }
+                        /* Footer */
+                        #footer .company {
+                            padding-left: 0;
+                        }
+                        /*===================================Course Details Page===================================*/
+                        /* ============Course Summary============ */
+                        #course-details-overview .container {
+                            padding-left: 5px;
+                            padding-right: 5px;
+                        }
+                        /* Course Summary Text  */
+                        #course-details-overview .course-summary .content .text {
+                            width: 60%;
+                        }
+                        #course-details-overview .course-summary .content .text .course-name p {
+                            font-size: 30px;
+                            margin: 20px 0;
+                        }
+                        #course-details-overview .course-summary .content .text .short-description p {
+                            font-size: 18px;
+                            margin: 10px 0;
+                        }
+                        #course-details-overview .course-summary .content .text .teacher {
+                            display: block;
+                        }
+                        /* Course Summary Card  */
+                        #course-details-overview .course-summary .content .card {
+                            width: 240px;
+                        }
+                        #course-details-overview .course-summary .content .card .card-body {
+                            padding: 5px;
+                        }
+                        #course-details-overview .course-summary .content .card .card-body .main-price p {
+                            font-size: 18px;
+                        }
+                        #course-details-overview .course-summary .content .card .card-body .discount-price p {
+                            font-size: 14px;
+                        }
+                        #course-details-overview .course-summary .content .card .card-body .enroll-btn .btn {
+                            font-size: 18px;
+                        }
+                        #course-details-overview .course-summary .content .card .card-body .course-include p {
+                            font-size: 16px;
+                            margin: 10px 0;
+                        }
+                        #course-details-overview .course-summary .content .card .card-body .course-include ul li {
+                            font-size: 14px;
+                        }
+                        #course-details-overview .course-summary .content .card .card-body .share-btn .btn {
+                            font-size: 16px;
+                            margin-top: 20px;
+                        }
+                        /* ============What To Learn============ */
+                        #course-details-overview .learn {
+                            padding: 10px;
+                        }
+                        #course-details-overview .learn .item {
+                            font-size: 16px;
+                            padding-left: 20px;
+                            padding-right: 10px;
+                        }
+                        #course-details-overview .learn .item .far {
+                            font-size: 16px;
+                        }
+                        /* ============Course Content============ */
+                        /* Course Content Title */
+                        #course-details-overview .course-content .section-title .left-part .fas {
+                            font-size: 18px;
+                            margin-right: 10px;
+                        }
+                        #course-details-overview .course-content .section-title .left-part .text {
+                            font-size: 18px;
+                        }
+                        #course-details-overview .course-content .section-title .right-part p {
+                            font-size: 16px;
+                        }
+                        /* Course Content Type */
+                        #course-details-overview .course-content .content .type .fas {
+                            font-size: 18px;
+                            width: 20px;
+                        }
+                        #course-details-overview .course-content .content .type a,
+                        #course-details-overview .course-content .content .type p,
+                        #course-details-overview .course-content .content .preview a {
+                            font-size: 14px;
+                        }
+                        /*===================================Book Details Page===================================*/
+                        /* ============Book Summary============ */
+                        #book-details-overview .container {
+                            padding-left: 5px;
+                            padding-right: 5px;
+                        }
+                        /* Course Summary Text  */
+                        #book-details-overview .book-summary .content .text {
+                            width: 60%;
+                        }
+                        #book-details-overview .book-summary .content .text .book-name p {
+                            font-size: 30px;
+                            margin: 20px 0;
+                        }
+                        #book-details-overview .book-summary .content .text .short-description p {
+                            font-size: 18px;
+                            margin: 10px 0;
+                        }
+                        #book-details-overview .book-summary .content .text .created {
+                            display: block;
+                        }
+                        /* book Summary Card  */
+                        #book-details-overview .book-summary .content .card {
+                            width: 240px;
+                        }
+                        #book-details-overview .book-summary .content .card .card-body {
+                            padding: 5px;
+                        }
+                        #book-details-overview .book-summary .content .card .card-body .main-price p {
+                            font-size: 18px;
+                        }
+                        #book-details-overview .book-summary .content .card .card-body .discount-price p {
+                            font-size: 14px;
+                        }
+                        #book-details-overview .book-summary .content .card .card-body .book-include p {
+                            font-size: 16px;
+                            margin: 10px 0;
+                        }
+                        #book-details-overview .book-summary .content .card .card-body .book-include ul li {
+                            font-size: 14px;
+                        }
+                        #book-details-overview .book-summary .content .card .card-body .share-btn .btn {
+                            font-size: 16px;
+                            margin-top: 20px;
+                        }
+                        #book-details-overview .book-summary .content .card .card-body .book-include ul {
+                            padding-left: 25px;
+                        }
+                        /*===================================Event Details Page===================================*/
+                        /* ============Event Summary============ */
+                        #event-details-overview .container {
+                            padding-left: 5px;
+                            padding-right: 5px;
+                        }
+                        /* Event Summary Text  */
+                        #event-details-overview .event-summary .content .text {
+                            width: 60%;
+                        }
+                        #event-details-overview .event-summary .content .text .event-name p {
+                            font-size: 30px;
+                            margin: 20px 0;
+                        }
+                        #event-details-overview .event-summary .content .text .short-description p {
+                            font-size: 18px;
+                            margin: 10px 0;
+                        }
+                        #event-details-overview .event-summary .content .text .created {
+                            display: block;
+                        }
+                        /* Event Summary Card  */
+                        #event-details-overview .event-summary .content .card {
+                            width: 240px;
+                        }
+                        #event-details-overview .event-summary .content .card .card-body {
+                            padding: 5px;
+                        }
+                        #event-details-overview .event-summary .content .card .card-body .main-price p {
+                            font-size: 18px;
+                        }
+                        /*===================================Purchased Course Page===================================*/
+                        #purchased-course .course-navabr .nav-pills .nav-link {
+                            font-size: 16px;
+                            padding-left: 5px;
+                            padding-right: 5px;
+                        }
+                        /* ============Quiz============ */
+                        #quiz .text .title {
+                            font-size: 25px;
+                        }
+                        #quiz .text p {
+                            font-size: 20px;
+                        }
+                        /* ============Announcement============ */
+                        #announcement .new-item textarea {
+                            height: 85px;
+                        }
+                        /*===================================Blog Page===================================*/
+                        #single-blog-page .related-items .item .image {
+                            height: 150px;
+                        }
+                        #single-blog-page .related-items .item .text .title {
+                            font-size: 18px;
+                        }
+                        #single-blog-page .related-items .item .text .creator,
+                        #single-blog-page .related-items .item .text p {
+                            font-size: 14px;
+                        }
+                        /*===================================Cart Page===================================*/
+                        #cart .cartbox .item .name p {
+                            font-size: 16px;
+                        }
+                        #cart .cartbox .item .name .creator {
+                            font-size: 14px;
+                        }
+                        #cart .cartbox .item .button a {
+                            font-size: 14px;
+                        }
+                        #cart .cartbox .item .price p {
+                            font-size: 14px;
+                        }
+                        #cart .order-summary .price p {
+                            font-size: 14px;
+                        }
+                        #cart .order-summary .total-price p {
+                            font-size: 18px;
+                            margin: 10px 0;
+                        }
+                        #cart .cus-padding {
+                            padding: 0;
+                        }
+                        #cart .order-summary .title {
+                            font-size: 20px;
+                            padding-bottom: 10px;
+                            margin-bottom: 10px;
+                        }
+                        #cart .order-summary .terms p,
+                        #cart .order-summary .terms a {
+                            font-size: 14px;
+                        }
+                        #cart .order-summary .checkout .btn {
+                            font-size: 16px;
+                            margin: 10px 0;
+                        }
+                        /*===================================Authentication Page===================================*/
+                        #authentication .auth-form .text {
+                            padding: 10px 0;
+                        }
+                        #authentication .auth-form .text p {
+                            font-size: 12px;
+                        }
+                        #authentication .auth-form .forgot-pass {
+                            font-size: 14px;
+                            margin-bottom: 15px;
+                        }
+                        #authentication .auth-form .auth-btn {
+                            margin: 15px 0;
+                            font-size: 16px;
+                        }
+                        #authentication .auth-form label.form-check-label {
+                            font-size: 16px;
+                        }
+                        #authentication .auth-form .alter .title {
+                            margin-bottom: 10PX;
+                        }
+                        #authentication .auth-form .alter P {
+                            margin-bottom: 15px;
+                        }
+                        #authentication .auth-form .alter .social-site a .fab {
+                            height: 40px;
+                            width: 40px;
+                            font-size: 18px;
+                            line-height: 40px;
+                        }
+                        /*===================================View All Course Page===================================*/
+                        #view-all-course .course .title p {
+                            font-size: 20px;
+                        }
+                        #view-all-course .course .title p span {
+                            font-size: 14px;
+                        }
+                        #view-all-course .course .sort .dropdown .sort {
+                            width: 75px;
+                        }
+                        #view-all-course .course .sort .dropdown .sort {
+                            width: 75px;
+                        }
+                        /*===================================View All Book Page===================================*/
+                        #view-all-book .book .item .content .books-summary .star {
+                            padding: 10px 12px;
+                            padding-left: 20px;
+                        }
+                        /*===================================Course Viddeo Page===================================*/
+                        /* Video Player */
+                        #course-video .video-player .title p {
+                            font-size: 18px;
+                        }
+                        #course-video .video-player .control-btn .btn {
+                            font-size: 14px;
+                        }
+                        #course-video .video-player .control-btn .btn i {
+                            padding: 0 10px;
+                        }
+                        #course-video .menu {
+                            height: 350px;
+                        }
+                    }
+                    
+                    @media (max-width: 767.98px) {
+                        /* Common */
+                        .section-padding {
+                            padding: 20px 0;
+                        }
+                        /*===================================Home Page===================================*/
+                        /* Books Slider */
+                        #books .books-slider .slider-item {
+                            margin: 20px 5px !important;
+                        }
+                        #books .books-slider .slider-item .slider-content .books-summary .star {
+                            padding-left: 12px;
+                        }
+                        #books .books-slider .slider-item .slider-content .title {
+                            font-size: 18px;
+                        }
+                        #books .books-slider button.owl-next {
+                            left: 94%;
+                        }
+                        /* Survey */
+                        #survey .text {
+                            left: 51%;
+                            width: 49%;
+                        }
+                        #survey .text h3 {
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                        }
+                        #survey .text p {
+                            font-size: 16px;
+                            margin: 5px 0;
+                        }
+                        #survey .text p span {
+                            font-size: 16px;
+                        }
+                        #survey .text h5 {
+                            font-size: 16px;
+                            margin-bottom: 5px;
+                        }
+                        #survey .text .btn {
+                            font-size: 18px;
+                        }
+                        /* Course Items */
+                        #course-items .image {
+                            height: 135px;
+                        }
+                        #course-items .text .title {
+                            font-size: 16px;
+                        }
+                        /* Subscribe */
+                        #subscribe .form {
+                            background-position: 38% -209px;
+                        }
+                        #subscribe .form p {
+                            margin-bottom: 20px;
+                        }
+                        /*===================================Course Details Page===================================*/
+                        /* ============Course Summary============ */
+                        #course-details-overview .container {
+                            padding-left: 15px;
+                            padding-right: 15px;
+                        }
+                        /* Course Summary Text  */
+                        #course-details-overview .course-summary .content .text {
+                            width: 100%;
+                        }
+                        /* Course Summary Card  */
+                        #course-details-overview .course-summary .content .card {
+                            position: static;
+                            transform: translateX(0);
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            background-color: transparent;
+                        }
+                        #course-details-overview .course-summary .content .card .card-image {
+                            margin-top: 30px;
+                            display: block !important;
+                        }
+                        #course-details-overview .course-summary .content .card .card-body {
+                            padding: 0;
+                            color: #FFFFFF;
+                        }
+                        #course-details-overview .course-summary .content .card .card-body .price .main-price p,
+                        #course-details-overview .course-summary .content .card .card-body .price .discount-price p {
+                            color: #FFFFFF;
+                        }
+                        #course-details-overview .course-summary .content .card .card-body .price .discount-price p::after {
+                            background-color: #FFFFFF;
+                        }
+                        #book-details-overview .book-summary .content .card .card-body .book-type .radio-item .form-check-label {
+                            color: #FFFFFF;
+                        }
+                        #course-details-overview .course-summary .content .card .card-body .course-include p,
+                        #course-details-overview .course-summary .content .card .card-body .course-include ul li {
+                            color: #FFFFFF;
+                        }
+                        /*===================================Book Details Page===================================*/
+                        /* ============Book Summary============ */
+                        #book-details-overview .container {
+                            padding-left: 15px;
+                            padding-right: 15px;
+                        }
+                        /* Book Summary Text  */
+                        #book-details-overview .book-summary .content .text {
+                            width: 100%;
+                        }
+                        /* Book Summary Card  */
+                        #book-details-overview .book-summary .content .card {
+                            position: static;
+                            transform: translateX(0);
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            background-color: transparent;
+                        }
+                        #book-details-overview .book-summary .content .card .card-image {
+                            margin-top: 30px;
+                            display: block !important;
+                        }
+                        #book-details-overview .book-summary .content .card .card-body {
+                            padding: 0;
+                            color: #FFFFFF;
+                        }
+                        #book-details-overview .book-summary .content .card .card-body .price .main-price p,
+                        #book-details-overview .book-summary .content .card .card-body .price .discount-price p {
+                            color: #FFFFFF;
+                        }
+                        #book-details-overview .book-summary .content .card .card-body .price .discount-price p::after {
+                            background-color: #FFFFFF;
+                        }
+                        #book-details-overview .book-summary .content .card .card-body .book-include p,
+                        #book-details-overview .book-summary .content .card .card-body .book-include ul li {
+                            color: #FFFFFF;
+                        }
+                        /*===================================Event Details Page===================================*/
+                        /* ============Event Summary============ */
+                        #event-details-overview .container {
+                            padding-left: 15px;
+                            padding-right: 15px;
+                        }
+                        /* Event Summary Text  */
+                        #event-details-overview .event-summary .content .text {
+                            width: 100%;
+                        }
+                        /* Event Summary Card  */
+                        #event-details-overview .event-summary .content .card {
+                            position: static;
+                            transform: translateX(0);
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            background-color: transparent;
+                        }
+                        #event-details-overview .event-summary .content .card .card-image {
+                            margin-top: 30px;
+                            display: block !important;
+                        }
+                        #event-details-overview .event-summary .content .card .card-body {
+                            padding: 0;
+                            color: #FFFFFF;
+                        }
+                        #event-details-overview .event-summary .content .card .card-body .price .main-price p {
+                            color: #FFFFFF;
+                        }
+                        /*===================================Purchased Course===================================*/
+                        /* ============Quiz============ */
+                        #quiz .image {
+                            width: 150px;
+                        }
+                        /* ============Assignment============ */
+                        #assignment .image {
+                            width: 150px;
+                        }
+                        /*===================================Blog Page===================================*/
+                        #single-blog-page .related-items .item .image {
+                            height: 135px;
+                        }
+                        #single-blog-page .related-items .item .text .title {
+                            font-size: 16px;
+                        }
+                        /*===================================Cart Page===================================*/
+                        #cart .cus-padding {
+                            padding-left: 15px;
+                            padding-right: 15px;
+                        }
+                        #cart .order-summary {
+                            margin-top: 50px;
+                        }
+                        /*===================================Authentication Page===================================*/
+                        #authentication .image {
+                            display: none;
+                        }
+                        #authentication .auth-form::after {
+                            display: none;
+                        }
+                        #authentication .auth-form .resend {
+                            display: block;
+                            text-align: center;
+                        }
+                        /*===================================Profile Page===================================*/
+                        #profile-page .details .menu {
+                            padding: 0;
+                        }
+                        #profile-page .details .user {
+                            padding: 20px 0;
+                        }
+                        #profile-page .personal-information textarea#about {
+                            height: 150px;
+                        }
+                        /*===================================Dashboard Course and Wishlist Page===================================*/
+                        /* Book */
+                        #course-wishlist #wishlist-tab .book .item .content .books-summary .user,
+                        #course-wishlist #wishlist-tab .book .item .content .books-summary .comment,
+                        #course-wishlist #wishlist-tab .book .item .content .books-summary .star {
+                            padding: 10px 12px;
+                        }
+                        #course-wishlist #wishlist-tab .book .item .content .books-summary .star {
+                            padding-left: 25px;
+                        }
+                        /*===================================Dashboard Page===================================*/
+                        /* Book */
+                        #dashboard-page .book .item .content .books-summary .user,
+                        #dashboard-page .book .item .content .books-summary .comment,
+                        #dashboard-page .book .item .content .books-summary .star {
+                            padding: 10px 12px;
+                        }
+                        #dashboard-page .book .item .content .books-summary .star {
+                            padding-left: 25px;
+                        }
+                        /*===================================View All Course Page===================================*/
+                        #view-all-course .course .item .content .buttons {
+                            text-align: left;
+                        }
+                    }
+                    
+                    @media (max-width: 575.98px) {
+                        /*===================================Home Page===================================*/
+                        /* Header Top */
+                        #header-top .container {
+                            padding-right: 5px !important;
+                            padding-left: 5px !important;
+                        }
+                        #header-top .fas {
+                            font-size: 14px;
+                        }
+                        #header-top .content p {
+                            font-size: 14px;
+                            padding: 0 5px;
+                        }
+                        #header-top .content img {
+                            height: 25px;
+                        }
+                        /* Menu Bar */
+                        #menubar .container {
+                            padding-right: 5px !important;
+                            padding-left: 5px !important;
+                        }
+                        #menubar .menu-item .menu-link {
+                            font-size: 16px;
+                            padding: 5px;
+                        }
+                        /* Quick Preview  Slider*/
+                        .quick-preview .quick-preview-header p {
+                            font-size: 16px;
+                        }
+                        .quick-preview .quick-preview-header .btn {
+                            font-size: 14px;
+                        }
+                        .quick-preview-slider .preview-item {
+                            margin: 20px 10px;
+                            max-width: 350px;
+                            margin: auto;
+                        }
+                        .quick-preview-slider button.owl-prev {
+                            left: 0%;
+                        }
+                        .quick-preview .quick-preview-slider button.owl-next {
+                            left: 94%;
+                        }
+                        /* Event & Webinar Slider*/
+                        #books .quick-preview-header p {
+                            font-size: 16px;
+                        }
+                        #books .quick-preview-header .btn {
+                            font-size: 14px;
+                        }
+                        #event-webinars .image {
+                            margin-bottom: 30px;
+                        }
+                        #event-webinars .image img {
+                            width: 60% !important;
+                        }
+                        #event-webinars .event-webinars-slider button.owl-next {
+                            left: 94%;
+                        }
+                        /* Books Slider */
+                        #books .books-slider button.owl-next {
+                            left: 94%;
+                        }
+                        /* Course Items */
+                        #course-items .item {
+                            width: 60%;
+                            margin: 20px auto;
+                        }
+                        #course-items .image {
+                            height: 200px;
+                        }
+                        /* Community Slider */
+                        #community .header .title {
+                            font-size: 30px;
+                        }
+                        #community .header .sub-title {
+                            font-size: 20px;
+                        }
+                        #community .community-slider button.owl-next {
+                            left: 105%;
+                        }
+                        /* Survey */
+                        #survey .text {
+                            position: static;
+                            background-color: #F1FF29;
+                            width: 100%;
+                            padding: 20px 5px;
+                            transform: translateY(0);
+                        }
+                        #survey .text h3 {
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                        }
+                        #survey .text p,
+                        #survey .text p span {
+                            font-size: 16px;
+                        }
+                        #survey .text h5 {
+                            font-size: 16px;
+                            margin-bottom: 10px;
+                        }
+                        #survey .text .btn {
+                            font-size: 18px;
+                        }
+                        /* Subscribe */
+                        #subscribe .form {
+                            max-width: 300px !important;
+                        }
+                        #subscribe img {
+                            display: none;
+                        }
+                        /* Counter */
+                        #counter .counter-item p {
+                            font-size: 25px;
+                        }
+                        #counter .counter-item h3 {
+                            font-size: 35px;
+                        }
+                        /* Footer */
+                        #footer .title {
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                        #footer .contact img {
+                            margin-bottom: 20px;
+                            width: 50% !important;
+                        }
+                        /*===================================Course Details Page===================================*/
+                        /* ============Course Summary============ */
+                        /* Course Summary Text  */
+                        #course-details-overview .course-summary .content .text .course-name {
+                            width: 80%;
+                        }
+                        #course-details-overview .course-summary .content .text .course-name p {
+                            font-size: 25px;
+                            margin: 20px 0;
+                        }
+                        #course-details-overview .course-summary .content .text .short-description p {
+                            font-size: 16px;
+                        }
+                        #course-details-overview .course-summary .content .text .user,
+                        #course-details-overview .course-summary .content .text .teacher {
+                            font-size: 14px;
+                            display: block;
+                        }
+                        /* ============What To Learn============ */
+                        #course-details-overview .learn .item,
+                        #course-details-overview .learn .item .far {
+                            font-size: 14px;
+                        }
+                        /* ============Rating Bar============ */
+                        #course-details-overview .rating-bar .rating-item .proggressbar {
+                            width: 170px;
+                        }
+                        /* ============Course Content============ */
+                        /* Title */
+                        #course-details-overview .course-content .title .total-item {
+                            display: block;
+                        }
+                        /* Course Content Title */
+                        #course-details-overview .course-content .section-title .left-part .fas {
+                            font-size: 16px;
+                            margin-right: 10px;
+                        }
+                        #course-details-overview .course-content .section-title .left-part .text {
+                            font-size: 16px;
+                        }
+                        #course-details-overview .course-content .section-title .right-part p {
+                            display: none;
+                        }
+                        /* Course Content Type */
+                        #course-details-overview .course-content .content .preview {
+                            display: none;
+                        }
+                        #course-details-overview .course-content .content .type .fas {
+                            font-size: 16px;
+                            width: 16px;
+                        }
+                        #course-details-overview .course-content .content .type a,
+                        #course-details-overview .course-content .content .type p {
+                            font-size: 14px;
+                            margin: 0 10px;
+                        }
+                        #course-details-overview .course-content .more-item {
+                            font-size: 16px;
+                            padding: 10px 0;
+                        }
+                        /*===================================Book Details Page===================================*/
+                        /* ============Book Summary============ */
+                        /* Book Summary Text  */
+                        #book-details-overview .book-summary .content .text .book-name {
+                            width: 80%;
+                        }
+                        #book-details-overview .book-summary .content .text .book-name p {
+                            font-size: 25px;
+                            margin: 20px 0;
+                        }
+                        #book-details-overview .book-summary .content .text .short-description p {
+                            font-size: 16px;
+                        }
+                        #book-details-overview .book-summary .content .text .user,
+                        #book-details-overview .book-summary .content .text .created {
+                            font-size: 14px;
+                            display: block;
+                        }
+                        /* ============Rating Bar============ */
+                        #book-details-overview .rating-bar .rating-item .proggressbar {
+                            width: 170px;
+                        }
+                        /*===================================Event Details Page===================================*/
+                        /* ============Event Summary============ */
+                        /* Event Summary Text  */
+                        #event-details-overview .event-summary .content .text .event-name {
+                            width: 80%;
+                        }
+                        #event-details-overview .event-summary .content .text .event-name p {
+                            font-size: 25px;
+                            margin: 20px 0;
+                        }
+                        #event-details-overview .event-summary .content .text .short-description p {
+                            font-size: 16px;
+                        }
+                        #event-details-overview .event-summary .content .text .created {
+                            font-size: 14px;
+                            display: block;
+                        }
+                        /* ============Rating Bar============ */
+                        #event-details-overview .rating-bar .rating-item .proggressbar {
+                            width: 170px;
+                        }
+                        /*===================================Purchased Course Page===================================*/
+                        /* ============Overview============ */
+                        /* Learn */
+                        #overview .learn {
+                            padding: 10px;
+                        }
+                        #overview .learn .item,
+                        #overview .learn .item .far {
+                            font-size: 14px;
+                        }
+                        /* ============Course-Content============ */
+                        #course-content .course-content .title .total-item {
+                            display: block;
+                        }
+                        /* Course Content Title */
+                        #course-content .course-content .section-title .left-part .fas {
+                            font-size: 16px;
+                            margin-right: 10px;
+                        }
+                        #course-content .course-content .section-title .left-part .text {
+                            font-size: 16px;
+                        }
+                        #course-content .course-content .section-title .right-part p {
+                            display: none;
+                        }
+                        /* Course Content Type */
+                        #course-content .course-content .content .preview {
+                            display: none;
+                        }
+                        #course-content .course-content .content .type .fas {
+                            font-size: 16px;
+                            width: 16px;
+                        }
+                        #course-content .course-content .content .type a,
+                        #course-content .course-content .content .type p {
+                            font-size: 14px;
+                            margin: 0 10px;
+                        }
+                        #course-content .course-content .more-item {
+                            font-size: 16px;
+                            padding: 10px 0;
+                        }
+                        /* ============Quiz============ */
+                        #quiz {
+                            padding-top: 0;
+                        }
+                        /* ============Assignment============ */
+                        #assignment {
+                            padding-top: 0;
+                        }
+                        #assignment .submit-assignment {
+                            width: 100%;
+                        }
+                        /* ============Resource-Content============ */
+                        #resource .resource-content .title .total-item {
+                            display: block;
+                        }
+                        /* Resource Content Title */
+                        #resource .resource-content .section-title .left-part .fas {
+                            font-size: 16px;
+                            margin-right: 10px;
+                        }
+                        #resource .resource-content .section-title .left-part .text {
+                            font-size: 16px;
+                        }
+                        #resource .resource-content .section-title .right-part p {
+                            display: none;
+                        }
+                        /* Resource Content Type */
+                        #resource .resource-content .resource .preview {
+                            display: none;
+                        }
+                        #resource .resource-content .resource .type .fas {
+                            font-size: 16px;
+                            width: 16px;
+                        }
+                        #resource .resource-content .resource .type a,
+                        #resource .resource-content .resource .type p {
+                            font-size: 14px;
+                            margin: 0 10px;
+                        }
+                        #resource .resource-content .more-item {
+                            font-size: 16px;
+                            padding: 10px 0;
+                        }
+                        /* ============Announcement============ */
+                        #announcement .items .item {
+                            flex-direction: column;
+                        }
+                        /*===================================Blog Page===================================*/
+                        #single-blog-page .title p {
+                            font-size: 30px;
+                        }
+                        #single-blog-page .title .creator {
+                            display: block !important;
+                        }
+                        #single-blog-page .creator p {
+                            font-size: 18px;
+                        }
+                        #single-blog-page .creator .name {
+                            border-right: 0;
+                        }
+                        #single-blog-page .related-items .item {
+                            width: 60%;
+                            margin: 20px auto;
+                        }
+                        /*===================================Course Viddeo Page===================================*/
+                        #course-video .video-player .d-flex {
+                            display: block !important;
+                        }
+                        .control-btn .btn {
+                            padding: 0;
+                        }
+                        /*===================================View All Course Page===================================*/
+                        #view-all-course .course .item .content .text .details {
+                            display: block !important;
+                        }
+                        #view-all-course .course .item .content .text .name {
+                            font-size: 16px;
+                        }
+                        #view-all-course .course .item .content .text .details {
+                            font-size: 14px;
+                        }
+                        #view-all-course .course .item .content .text .description {
+                            font-size: 14px;
+                        }
+                        @media (min-width: 421px) {
+                            /*===================================Cart Page===================================*/
+                            #cart .cartbox .item .name p {
+                                font-size: 14px;
+                            }
+                            #cart .cartbox .item .name .creator {
+                                font-size: 12px;
+                            }
+                            #cart .cartbox .item .button a {
+                                font-size: 12px;
+                            }
+                            #cart .cartbox .item .price p {
+                                font-size: 12px;
+                            }
+                        }
+                        /*===================================Dashboard Course and Wishlist Page===================================*/
+                        #course-wishlist ul#pills-tab,
+                        #course-wishlist #course-tab .item,
+                        #course-wishlist #wishlist-tab .course .title,
+                        #course-wishlist #wishlist-tab .book .title,
+                        #course-wishlist #wishlist-tab .course .item,
+                        #course-wishlist #wishlist-tab .book .item {
+                            max-width: 270px;
+                            margin-left: auto !important;
+                            margin-right: auto !important;
+                        }
+                        /*===================================Dashboard Page===================================*/
+                        #dashboard-page .title,
+                        #dashboard-page .item,
+                        #dashboard-page .course .title,
+                        #dashboard-page .book .title,
+                        #dashboard-page .course .item,
+                        #dashboard-page .book .item {
+                            max-width: 270px;
+                            margin-left: auto !important;
+                            margin-right: auto !important;
+                        }
+                        @media (max-width: 420px) {
+                            /*===================================Home Page===================================*/
+                            /* Header Top*/
+                            #header-top .fas {
+                                font-size: 12px;
+                            }
+                            #header-top .content p {
+                                font-size: 12px;
+                                padding: 0 5px;
+                            }
+                            #header-top .content img {
+                                height: 18px;
+                            }
+                            #header-top .close-top {
+                                top: 25%;
+                                right: 2%;
+                            }
+                            /* Menu Bar */
+                            #menubar .menu-item .menu-link {
+                                font-size: 12px;
+                                padding: 2px;
+                            }
+                            /* Quick Preview Slider*/
+                            .quick-preview .quick-preview-slider button.owl-next {
+                                left: 90%;
+                            }
+                            /* Event & Webinar Slider*/
+                            #event-webinars .event-webinars-slider button.owl-next {
+                                left: 90%;
+                            }
+                            /* Books Slider */
+                            #books .books-slider button.owl-next {
+                                left: 90%;
+                            }
+                            /* Course Items */
+                            #course-items .item {
+                                width: 90%;
+                            }
+                            /* Counter */
+                            #counter .counter-item p {
+                                font-size: 20px;
+                            }
+                            /*===================================Purchased Course Page===================================*/
+                            #live-class .item {
+                                width: 280px;
+                            }
+                            #quiz .item {
+                                width: 280px;
+                            }
+                            #assignment .item {
+                                width: 280px;
+                            }
+                            /*===================================Blog Page===================================*/
+                            #single-blog-page .related-items .item {
+                                width: 90%;
+                            }
+                            /*===================================Cart Page===================================*/
+                            #cart .cartbox .item {
+                                display: inline-block;
+                                width: 100%;
+                            }
+                            #cart .cartbox .item .image,
+                            #cart .cartbox .item .name,
+                            #cart .cartbox .item .button,
+                            #cart .cartbox .item .price {
+                                width: 95%;
+                            }
+                            #cart .cartbox .item .image {
+                                text-align: center;
+                            }
+                            #cart .cartbox .item .button,
+                            #cart .cartbox .item .price {
+                                text-align: left;
+                            }
+                        }
+                    }
